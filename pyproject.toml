@@ -1,0 +1,7 @@
+[project]
+name = "cfb1-migration"
+version = "0.1.0"
+description = "Migration of the CFB1 college football model from Google Colab."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = []
