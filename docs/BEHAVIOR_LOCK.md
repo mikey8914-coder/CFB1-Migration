@@ -4,11 +4,54 @@
 
 The immutable reference is `legacy/CFB1_Colab_Reference.ipynb` (SHA-256 `94d8eca356392e9872974c2579a6fb45c3a989dbe0a5026d21f7ba70dff33431`). All cell references below use its original embedded labels, including `OLD` and suffixes. Unnumbered configuration/cleanup cells are identified by purpose.
 
-This document records **source-derived behavior to match**, not a claim that modules or notebook outputs have been validated. The notebook was inspected without execution. The user’s CURRENT MIGRATION DECISIONS in `NOTEBOOK_MAP.md` govern permanent ownership: CFB1 retains deterministic model calculations and expected ROI, excludes allocation/staking/promo/parlay/portfolio logic, and treats team totals as experimental.
+This document records **source-derived behavior to match**, not a claim that modules or notebook outputs have been validated. The notebook was inspected without execution. The approved ownership boundary below governs new production requirements. Earlier expected-ROI ownership in NOTEBOOK_MAP.md is superseded; team totals remain experimental.
 
-A future migrated module is validated only after matching coherent known historical Colab inputs, intermediate outputs, and downstream exports. Match row identities/order, columns, types, missingness, signs, thresholds, rounding, route/status text, warnings, and guard outcomes. No fixed expected slate size, team count, signal count, fit coefficient, historical sample size, or numerical output is invented here. Counts derived from `len(...)`, sums, or input sets are dynamic checks, not fixed historical goldens. Historical saved outputs may be stale or out of execution order and must be tied to an identified run before use as goldens.
+A future football-side module is validated against coherent known historical Colab inputs and intermediate football outputs. Legacy priced exports/formulas are historical references for Architect migration, not required outputs of new CFB1. Approved ownership/schema differences must be recorded separately from football behavior discrepancies. Match row identities/order, columns, types, missingness, signs, thresholds, rounding, route/status text, warnings, and guard outcomes. No fixed expected slate size, team count, signal count, fit coefficient, historical sample size, or numerical output is invented here. Counts derived from `len(...)`, sums, or input sets are dynamic checks, not fixed historical goldens. Historical saved outputs may be stale or out of execution order and must be tied to an identified run before use as goldens.
 
 Printed PASS conditions are distinguished from exceptions and diagnostic-only counts. Passing a structural check does not demonstrate model parity. Where the source only reports a count, that is not a hard stop. Where no guard exists, no new required value is attributed to the notebook. The source-exact validation appendix records counter definitions and predicates, including required-column lists.
+
+## Approved architecture — supersedes earlier EV ownership
+
+**Intentional architectural change:** CFB1 owns football handicapping and calibrated game probabilities. **Universal Bet Slip Architect owns all sportsbook-price-dependent wager evaluation:** break-even probability, expected ROI/EV%, Kelly sizing, stakes, promotions, and portfolio decisions. This supersedes earlier statements that expected ROI remains in production CFB1, including the earlier CURRENT MIGRATION DECISIONS in NOTEBOOK_MAP.md. The frozen notebook remains historical evidence and is unchanged.
+
+New production CFB1 must not require or calculate American-odds break-even, profit multiples, probability-minus-break-even edges, expected returns, price-edge statuses, price-ranked offer selections, or recommended wagers/stakes. These legacy calculations remain documented for historical replay and Architect boundary review; omission from CFB1 is an approved ownership change, **not an accidental numerical regression**. A football-side discrepancy in probabilities, push estimates, model lines, routing, or keys still requires investigation; this boundary change does not authorize changes to those calculations.
+
+Routine CFB1 market measurements remain **spreads and game totals**, with schedule/identity fields needed to associate them. Source/retrieval timestamps provide provenance. Opening spread is conditionally needed for the preserved late-week movement audit; it is another spread observation, not juice. Historical calibration may still need historical spreads/totals, scores, classifications, and provider provenance. That football calibration dataset is distinct from live sportsbook offer acquisition. No routine Odds API key, sportsbook prices, props, or offer-shopping fields are required by new CFB1.
+
+## Intended football-side handoff — proposed, not implemented
+
+The handoff supplies **all football-eligible modeled/review games**, with explicit exclusions or unavailable/qualitative states. Do not first filter games by positive ROI or price attractiveness. It should contain:
+
+- Stable game identity, canonical away/home teams, season/week and scheduled kickoff, model/data version, frozen model cutoff, market source and observation timestamps.
+- Model side; home/team perspective and sign conventions; fair/retained model lines and relevant margins/cushions; spread/game-total snapshot context; applicable opener/current spread movement.
+- Football-calibrated probabilities with explicit event definitions. A game-win probability must be identified separately from a probability of covering a particular line. Every line-conditional spread/total/TT probability must identify its evaluated line, team, market family, direction, and horizon (full game versus first half).
+- Applicable win/push/loss probabilities, their calibration/source/version and sample context, missingness and validation status. Preserve W/P/L normalization and half-point/integer push rules; do not invent unsupported game-win, total, first-half, or experimental TT probabilities merely to populate the interface.
+- EPA/FEI evidence, Module 3 support/conflict, convergence, football-side routing/review status, key-number classifications/barriers, warnings, and experimental/qualitative flags.
+
+**Excluded from CFB1 handoff requirements:** American_Odds, Sportsbook-priced offer identity, Break_Even_Prob/Break_Even, Profit_Multiple, Probability_Edge defined against price, Expected_ROI/EV%, Kelly/stake/bankroll fields, price-edge statuses, and ROI-selected PRIMARY/VALUE_ALT roles. The Architect attaches actual offers and computes wager economics. Football-side warnings may remain; price-derived warning/status meanings must be reviewed rather than repurposed.
+
+For actual sportsbook lines different from the frozen evaluation line, the interface must eventually provide a reproducible **price-free** probability/push evaluation at the requested point threshold, or a sufficiently specified calibrated distribution/line-indexed output. Do not reuse a cover probability at a different handicap or infer it from a fair line alone. Whether this becomes a line-query interface or distribution handoff is unresolved; neither is implemented here. Receiving a point threshold does not transfer price evaluation into CFB1.
+
+## Price-dependent legacy decisions requiring review
+
+| Original embedded label | Legacy coupling | Required architecture treatment / unresolved dependency |
+| --- | --- | --- |
+| OLD CELL 36 / OLD CELL 39 / OLD CELL 40 / OLD CELL 41 / OLD CELL 42 / OLD CELL 43 / OLD CELL 44 | Core routes, shortlist/review, and market-movement decisions use spread points, football evidence, and keys, **not American juice**. Covers pasted prices are unused. | Preserve these football decisions and their rule precedence. Keep audit opener requirements and full-slate population effects. “Market-dependent” here does not mean price-dependent. |
+| CELL 46 / CELL 53 / CELL 54 | Manual and automatic exact-offer intake, validation, quota/market discovery. | Legacy/reference or Architect acquisition boundary, outside new CFB1 requirements. |
+| CELL 55 | Odds bounds [-250,300], probability-minus-break-even ranking, best-price duplicate selection, and offered-line shortlist membership. | Price evaluation/selection belongs to Architect. Preserve price-free line orientation, empirical calibration, and key calculations separately. New football candidate membership is not defined by silently removing a filter. |
+| CELL 57 | W/P/L calculations mixed with profit multiple, break-even, ROI/status, and price-based schema guards. | Preserve football W/P/L and source-selection behavior; migrate economics responsibility to Architect. A legacy pricing-column guard is not a new football API requirement. |
+| CELL 57A | Price-free integer push redistribution followed by profit-multiple ROI recomputation. | Preserve push estimator and adjusted W/P/L; ROI recomputation belongs to Architect. |
+| OLD CELL 59 | Experimental route-to-TT adjustment/calibration mixed with odds bounds, anchor nearest -110, highest-price duplicate selection, probability-edge shortlist. | Keep experimental football logic; **TT anchor/candidate selection is price-coupled and unresolved**. Do not substitute a price-free anchor or certify TT migration without separate review/validation. |
+| CELL 59A / CELL 60 | Football directional support/push gating precedes price-dependent TT ROI/status. | Retain experimental eligibility/push behavior; CELL 60 economics belong to Architect. |
+| CELL 61 / CELL 62 | Review subset requires positive ROI; PRIMARY ties use odds; VALUE_ALT maximizes ROI; pricing statuses use ROI. | Legacy wager selection/display is not the new football decision board. Architect owns these choices; review export membership/roles explicitly. Do not silently reinterpret PRIMARY or drop unpriced football candidates. |
+| CELL 61B / CELL 66 / CELL 67 / CELL 73 | Rich football context is merged with priced rows; synchronization keys include Sportsbook/American_Odds and economics fields; final exports depend on the ROI-selected card. | Preserve football context/probability synchronization, but specify new event/line/perspective keys and completeness checks. Old price-key/schema/ROI sync assertions remain historical only. New schema is an intentional interface change. |
+| CELL 69 | Live team-line probability/push recalculation mixed with odds, break-even, ROI/status. | Preserve price-free threshold recalculation/calibration; Architect evaluates the actual price. Its conservative source choice differs from CELL 57's 300-observation gate; do not unify silently. |
+
+Remaining dependencies: validate replacement single-source versus legacy DK/FD spread roles, initial versus audit snapshots, opener availability, CELL 57 bucket-metadata propagation, CELL 57A signed-line push behavior, and team-total calibration. Preserve these uncertainties; moving economics does not solve them.
+
+## Historical reference checkpoints and preserved football behavior
+
+The sections and source excerpts below describe what the notebook actually does. Football calculations remain behavior locks. Price calculations, offer-selected populations, price guards, statuses, and schemas are **historical-only**, unless explicitly assigned to the Architect above. Legacy pricing guards must not block a new CFB1 football run. Source formulas and thresholds are retained as evidence, not deleted or silently rewritten.
 
 ## Team normalization
 
@@ -161,15 +204,15 @@ Source hard stops require pricing columns, global_errors, and Home_Team for orie
 
 Let base W,L be CELL 57 values and H be Historical_Push_Prob. `nonpush = W + L`; when positive, win_share=W/nonpush, loss_share=L/nonpush; otherwise shares are NaN. Push-adjusted W=(1−H)×win_share, P=H, L=(1−H)×loss_share. ROI is recalculated from adjusted W/L. Key landing rates are context only, not a second push deduction. Half-point lines therefore have zero push mass and re-normalized nonpush probabilities.
 
-Hard stops require **0 adjusted probability-sum errors** using `np.isclose(sum,1.0,atol=1e-9)` and no legacy staking columns. Integer-row and nonzero-push counts are diagnostics without fixed targets. Canonical downstream spread probabilities/ROI must use these adjusted values.
+Hard stops require **0 adjusted probability-sum errors** using `np.isclose(sum,1.0,atol=1e-9)` and no legacy staking columns. Integer-row and nonzero-push counts are diagnostics without fixed targets. New CFB1 preserves these canonical adjusted spread probabilities. Legacy downstream ROI uses the adjusted values historically; new ROI evaluation belongs to the Architect.
 
-## Break-even probability
+## Legacy break-even probability — historical reference only
 
 **CELL 55 / CELL 57 / OLD CELL 59 / CELL 60 / CELL 69:** for American odds O<0, break-even = abs(O)/(abs(O)+100); for O≥0, 100/(O+100). Profit multiple is O/100 for positive odds, 100/abs(O) for negative odds (CELL 57 uses its nonpositive branch for zero). Preserve exact source branches and validation behavior; no new zero-odds convention is supplied by this document. Break-even is the source's quoted-price probability, not a newly push-conditioned break-even formula.
 
-Match Break_Even_Prob, Profit_Multiple, CELL 60 Break_Even_Prob_Final, and handoff aliases for supplied pricing. This preserves CFB1 analytical EV capability without requiring exact prices for normal weekly model generation. None of these helper definitions supplies a standalone numeric PASS threshold.
+For historical replay/Architect boundary review, record Break_Even_Prob, Profit_Multiple, CELL 60 Break_Even_Prob_Final, and handoff aliases. These are not new production CFB1 requirements; the Architect owns their calculation. None of these helper definitions supplies a standalone numeric PASS threshold.
 
-## Expected ROI
+## Legacy expected ROI — historical reference only
 
 **CELL 57:** EV_Per_Dollar = W×Profit_Multiple − L; Expected_ROI aliases it. Push payout contributes zero. Status: NaN→NO_EV; ROI≥0.05→STRONG_PRICE_EDGE; ≥0.03→POSITIVE_EV; >0→THIN_POSITIVE_EV; otherwise NON_POSITIVE_EV. Warnings join nonblank key-tradeoff text and MARKET_CONFLICT/STRONG_MARKET_CONFLICT with ` | `.
 
@@ -179,7 +222,7 @@ Match Break_Even_Prob, Profit_Multiple, CELL 60 Break_Even_Prob_Final, and hando
 
 **CELL 61 spread handoff pricing status:** NaN→NO_QUANTITATIVE_PRICE; ROI≥0.05→STRONG_PRICE_EDGE; ≥0.02→POSITIVE_EV; >0→THIN_POSITIVE_EV; otherwise NON_POSITIVE_EV. The **0.02 versus CELL 57's 0.03** cutoff is an actual legacy difference, not a single threshold to normalize during extraction. Preserve status outputs independently.
 
-Expected ROI remains in CFB1. No bankroll allocation, Kelly fraction, recommended stake, promo, parlay/SGP, or portfolio output is added. Probability-sum and staking-field checks are described above; no fixed expected ROI or model-edge count is present in the source.
+Expected ROI was calculated in legacy CFB1; under the approved architecture it belongs exclusively to Universal Bet Slip Architect. No bankroll allocation, Kelly fraction, recommended stake, promo, parlay/SGP, or portfolio output is added. Probability-sum and staking-field checks are described above; no fixed expected ROI or model-edge count is present in the source.
 
 ## Team-total experimental output
 
@@ -193,7 +236,7 @@ CELL 59A **reports** half-point rows with positive push and supported rows with 
 
 **CELL 60 → `df_tt_ev`:** quantitative rows only, with ROI formula/status above. Hard stops: **0 rows with absolute W/P/L sum deviation >1e-9**, no retained TT_Full_Kelly/TT_Quarter_Kelly/TT_Quarter_Kelly_Stake columns. The absolute-difference comparison alone is not an explicit missing-value check; NaN sums may not count as >1e-9. Record that limitation rather than claiming a stronger guard. Team-total parity does not establish independent statistical validity; remain experimental until separately validated.
 
-## Final handoff schema
+## Legacy final handoff schema — historical reference only
 
 **CELL 61 → `df_cfb1_gem_handoff`, `df_cfb1_gem_review`:** spread Model_Probability/Push_Probability/Expected_ROI_Final must come from CELL 57A; TT quantitative values come from CELL 60; qualitative TT numeric probability/push/break-even/ROI are NaN. Complete handoff schema, in order:
 
@@ -219,17 +262,17 @@ Sort by Game, Market_Family, Card_Role; require adjusted-spread fields and no st
 
 Required fields are `Game, Market_Family, Card_Role, Team, Direction, Bet_Label, Sportsbook, Line, American_Odds, Model_Probability, Push_Probability, Break_Even_Prob, Expected_ROI, Model_Status, Decision_Status, Warning, Eligible_Market_Routes`. Hard stops: **0 missing required columns**, **0 qualitative-only numeric probability/push/break-even/ROI values**, no staking columns. Desired optional context fields are not all hard-required. Preserve CSV ordering and no-index export.
 
-CELL 73C restores only final context from the first sorted matching CSV; do not include it in normal generation or treat it as a replacement for the above calculations. CELL 69 live recalculation is on-demand and requires a nonempty matching history bucket. It chooses the GLOBAL triplet when global win probability ≤ bucket win probability, otherwise the SPREAD_BUCKET triplet, then applies historical integer push redistribution. Unlike CELL 57, it does not use the 300-observation gate. It raises when `np.isclose(adjusted W+P+L, 1.0, atol=1e-10)` is false (default relative tolerance retained). Preserve retained lines, this source choice, ROI, and context without fitting a new model; it is not a required automatic weekly step.
+CELL 73C restores only final context from the first sorted matching CSV; do not include it in normal generation or treat it as a replacement for the above calculations. CELL 69 live recalculation is on-demand and requires a nonempty matching history bucket. It chooses the GLOBAL triplet when global win probability ≤ bucket win probability, otherwise the SPREAD_BUCKET triplet, then applies historical integer push redistribution. Unlike CELL 57, it does not use the 300-observation gate. It raises when `np.isclose(adjusted W+P+L, 1.0, atol=1e-10)` is false (default relative tolerance retained). Preserve retained lines, this source choice, football probabilities/push, and context without fitting a new model; retain the ROI calculation only as historical Architect reference; it is not a required automatic weekly step.
 
 ## Unresolved validation boundaries
 
 - Known historical goldens, data timestamps, source payloads, and run sequence must be established before numeric parity can be claimed. This task does not execute the reference.
-- Odds API setup/acquisition and exhausted-quota artifacts are not behavior to preserve as required production infrastructure. Capture their useful input/output contracts and supply offline or external pricing fixtures instead.
+- Odds API setup/acquisition and exhausted-quota artifacts are not behavior to preserve as required production infrastructure. Capture useful historical input/output contracts for replay; new CFB1 must validate price-free football outputs independently of offer fixtures.
 - The intended Action Network/Covers initial acquisition is absent; its mapping to legacy DK/FD fields and any excluded games requires a separately reviewed comparison, especially for full-slate fits/percentiles.
 - Confirm the CELL 57 source metadata flow and CELL 57A signed-line push orientation against baseline cases before declaring them bugs or changing them.
 - Printed-only checks and NaN-sensitive guards must not be promoted to stronger notebook guarantees in reports. An intentional validation improvement belongs to a later authorized change.
 
-## Source-exact validation predicates and counters
+## Legacy source-exact validation predicates and counters
 
 The excerpts below are statically transcribed from the reference with whitespace/quotes normalized for readability. They show dynamic count definitions, required-field lists, printed PASS predicates, and direct hard-stop conditions; they are documentation, not extracted modules or executed tests. A hard-stop predicate is a **failure condition**. Printed reports without a hard stop remain diagnostics. Model formulas and expected classifications are described in the checkpoints above.
 

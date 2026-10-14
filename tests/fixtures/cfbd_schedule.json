@@ -1,0 +1,32 @@
+[
+  {
+    "id": 900000003,
+    "season": 2026,
+    "week": 6,
+    "seasonType": "regular",
+    "startDate": "2026-10-10T20:00:00Z",
+    "startTimeTBD": false,
+    "awayTeam": "App State",
+    "homeTeam": "Miami (OH)"
+  },
+  {
+    "id": 900000001,
+    "season": 2026,
+    "week": 6,
+    "seasonType": "regular",
+    "startDate": "2026-10-10T12:00:00-04:00",
+    "startTimeTBD": false,
+    "awayTeam": "Miami",
+    "homeTeam": "UConn"
+  },
+  {
+    "id": "900000002",
+    "season": 2026,
+    "week": 6,
+    "seasonType": "regular",
+    "startDate": "2026-10-10T18:00:00Z",
+    "startTimeTBD": false,
+    "awayTeam": "Hawai'i",
+    "homeTeam": "San José State"
+  }
+]
