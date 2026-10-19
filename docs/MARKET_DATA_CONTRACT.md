@@ -444,6 +444,28 @@ Temporary merge-suffix columns (`_57A_*`, `_Card`, `_Context`, `_GameContext`), 
 
 Numerical EPA and raw FEI differential/Module 3 signal thresholds do not use sportsbook price or line magnitude, but their row population and team identities come from the market-defined slate. Convergence uses the market-based FEI edge direction; routing/key/Phase 1/final decisions therefore still need valid point spreads. Preserve that distinction when describing “market-independent” calculations.
 
+## Covers boundary implementation — explicit readiness and provenance
+
+The hardened Covers adapter separates `manual_ready`, `production_ready`, and
+`audit_ready`. See [COVERS_MARKET_BOUNDARY.md](COVERS_MARKET_BOUNDARY.md) for exact
+rules, receipt schema, CLI requirements, exports, and conservative exit semantics.
+It reuses the committed identity/schedule foundation; alias membership alone
+does not verify a game. Production eligibility requires a valid official
+schedule association, preserved ID/orientation/date/scope, required measured
+current points, consistent opposing spread sides, and a known capture timestamp.
+Cached file mtime is filesystem metadata only; absent trusted capture metadata,
+retrieval time remains null and records cannot pass production readiness.
+
+Openers remain optional for **current-market** production eligibility. Verified
+same-game/same-book opening and later-current observations are a separate audit
+requirement, preserving OLD CELL 43/44's dependency without blocking initial
+market acquisition. No opener-acquisition convention is invented. Market-ready
+does not mean model-ready, complete-FBS coverage, or guaranteed quote freshness.
+October 17 recovery artifacts remain historical inputs, not runtime defaults.
+
+The adapter still exposes explicit legacy DK/FD roles; the general normalized
+schema below remains a proposal rather than a completed common-source interface.
+
 ## Proposed MINIMAL normalized football-market schema — not implemented
 
 Propose **one row per stable game, source, and retrieved observation**, retaining the frozen initial observation and later audit observation separately. Multiple honest source observations can coexist. Caller-selected snapshot/role and source priority must be explicit, not inferred from replacing whatever row happens to be latest.
