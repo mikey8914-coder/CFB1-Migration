@@ -1,11 +1,21 @@
 {
-  "mapping_version": 1,
+  "mapping_version": 2,
   "canonical_namespace": "CFBD team name",
   "reference": {
     "notebook": "legacy/CFB1_Colab_Reference.ipynb",
     "sha256": "94d8eca356392e9872974c2579a6fb45c3a989dbe0a5026d21f7ba70dff33431",
     "TEAM_ALIASES": "CELL 10",
     "BCF_TO_CFBD": "CELL 14"
+  },
+  "verified_additions": {
+    "Delaware Fightin' Blue Hens": {
+      "canonical_name": "Delaware",
+      "source": "Authenticated CFBD regular-season schedule",
+      "season": 2026,
+      "week": 8,
+      "game_date_et": "2026-10-20",
+      "game_id": 401871069
+    }
   },
   "TEAM_ALIASES": {
     "Air Force Falcons": "Air Force",
@@ -33,6 +43,7 @@
     "Colorado Buffaloes": "Colorado",
     "Colorado State Rams": "Colorado State",
     "Delaware Blue Hens": "Delaware",
+    "Delaware Fightin' Blue Hens": "Delaware",
     "Eastern Michigan Eagles": "Eastern Michigan",
     "Florida Atlantic Owls": "Florida Atlantic",
     "Florida Gators": "Florida",

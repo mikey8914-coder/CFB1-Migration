@@ -40,10 +40,22 @@ def reference_aliases(label: str, variable: str) -> dict[str, str]:
 class TeamIdentityTests(unittest.TestCase):
     def test_mapping_matches_all_cell_10_aliases(self):
         expected = reference_aliases("CELL 10", "TEAM_ALIASES")
-        self.assertEqual(dict(TEAM_ALIASES), expected)
+        self.assertEqual(
+            dict(TEAM_ALIASES),
+            {**expected, "Delaware Fightin' Blue Hens": "Delaware"},
+        )
         for raw, canonical in expected.items():
             with self.subTest(raw=raw):
                 self.assertEqual(normalize_team_name(raw), canonical)
+
+    def test_verified_delaware_alias_normalizes_and_resolves(self):
+        raw = "Delaware Fightin' Blue Hens"
+        self.assertEqual(normalize_team_name(raw), "Delaware")
+        identity = TeamIdentityResolver(["Delaware"]).resolve_market_name(raw)
+        self.assertEqual(identity.raw_name, raw)
+        self.assertEqual(identity.normalized_name, "Delaware")
+        self.assertTrue(identity.matched)
+        self.assertFalse(TeamIdentityResolver(["Miami"]).resolve_market_name(raw).matched)
 
     def test_mapping_matches_all_cell_14_aliases(self):
         expected = reference_aliases("CELL 14", "BCF_TO_CFBD")
@@ -60,7 +72,7 @@ class TeamIdentityTests(unittest.TestCase):
         self.assertEqual(mapping["reference"]["sha256"], digest)
         self.assertEqual(mapping["reference"]["TEAM_ALIASES"], "CELL 10")
         self.assertEqual(mapping["reference"]["BCF_TO_CFBD"], "CELL 14")
-        self.assertEqual(ALIAS_MAPPING_VERSION, 1)
+        self.assertEqual(ALIAS_MAPPING_VERSION, 2)
 
     def test_market_whitespace_is_collapsed_before_lookup(self):
         self.assertEqual(
