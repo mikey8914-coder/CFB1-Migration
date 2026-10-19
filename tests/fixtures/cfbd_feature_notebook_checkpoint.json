@@ -1,0 +1,899 @@
+{
+  "notebook": "legacy/CFB1_Colab_Reference.ipynb",
+  "sha256": "94d8eca356392e9872974c2579a6fb45c3a989dbe0a5026d21f7ba70dff33431",
+  "season": 2026,
+  "data_through_week": 5,
+  "target_week": 6,
+  "display_absolute_tolerance": 5e-07,
+  "counts": {
+    "weekly_play_records": [
+      35773,
+      23131,
+      22765,
+      21833,
+      20368
+    ],
+    "play_records": 123870,
+    "valid_ppa_rows": 93364,
+    "ppa_teams": 313,
+    "advanced_rows": 138,
+    "merged_rows": 138,
+    "duplicate_team_rows": 0,
+    "total_critical_nulls": 0,
+    "master_games": 57
+  },
+  "efficiency_sample": [
+    {
+      "team": "Air Force",
+      "Off_EPA": 0.189718,
+      "Def_EPA": 0.000603,
+      "Off_SuccessRate": 0.452769,
+      "Off_PassingDown_SR": 0.253165,
+      "Off_Explosiveness": 1.085244,
+      "Def_SuccessRate": 0.333333,
+      "Def_PassingDown_SR": 0.1875,
+      "Def_Havoc_Rate": 0.144,
+      "Off_LineYards": 3.527711,
+      "Net_EPA_Margin": 0.189115
+    },
+    {
+      "team": "Akron",
+      "Off_EPA": 0.052222,
+      "Def_EPA": 0.282767,
+      "Off_SuccessRate": 0.430303,
+      "Off_PassingDown_SR": 0.313131,
+      "Off_Explosiveness": 1.039954,
+      "Def_SuccessRate": 0.444805,
+      "Def_PassingDown_SR": 0.319149,
+      "Def_Havoc_Rate": 0.133,
+      "Off_LineYards": 3.692568,
+      "Net_EPA_Margin": -0.230545
+    },
+    {
+      "team": "Alabama",
+      "Off_EPA": 0.349468,
+      "Def_EPA": -0.112745,
+      "Off_SuccessRate": 0.512121,
+      "Off_PassingDown_SR": 0.37931,
+      "Off_Explosiveness": 1.307878,
+      "Def_SuccessRate": 0.34375,
+      "Def_PassingDown_SR": 0.247788,
+      "Def_Havoc_Rate": 0.2,
+      "Off_LineYards": 3.163536,
+      "Net_EPA_Margin": 0.462213
+    },
+    {
+      "team": "App State",
+      "Off_EPA": 0.237502,
+      "Def_EPA": 0.079889,
+      "Off_SuccessRate": 0.454861,
+      "Off_PassingDown_SR": 0.446809,
+      "Off_Explosiveness": 1.312445,
+      "Def_SuccessRate": 0.422794,
+      "Def_PassingDown_SR": 0.2125,
+      "Def_Havoc_Rate": 0.176,
+      "Off_LineYards": 2.576866,
+      "Net_EPA_Margin": 0.157613
+    },
+    {
+      "team": "Arizona",
+      "Off_EPA": 0.217433,
+      "Def_EPA": -0.013423,
+      "Off_SuccessRate": 0.495822,
+      "Off_PassingDown_SR": 0.4375,
+      "Off_Explosiveness": 1.155767,
+      "Def_SuccessRate": 0.343137,
+      "Def_PassingDown_SR": 0.284553,
+      "Def_Havoc_Rate": 0.167,
+      "Off_LineYards": 3.474359,
+      "Net_EPA_Margin": 0.230856
+    },
+    {
+      "team": "Arizona State",
+      "Off_EPA": 0.024659,
+      "Def_EPA": 0.140031,
+      "Off_SuccessRate": 0.416667,
+      "Off_PassingDown_SR": 0.311828,
+      "Off_Explosiveness": 1.259956,
+      "Def_SuccessRate": 0.380074,
+      "Def_PassingDown_SR": 0.292929,
+      "Def_Havoc_Rate": 0.137,
+      "Off_LineYards": 2.826119,
+      "Net_EPA_Margin": -0.115371
+    },
+    {
+      "team": "Arkansas",
+      "Off_EPA": 0.014616,
+      "Def_EPA": 0.166878,
+      "Off_SuccessRate": 0.410765,
+      "Off_PassingDown_SR": 0.27907,
+      "Off_Explosiveness": 1.114178,
+      "Def_SuccessRate": 0.426667,
+      "Def_PassingDown_SR": 0.216867,
+      "Def_Havoc_Rate": 0.123,
+      "Off_LineYards": 2.655405,
+      "Net_EPA_Margin": -0.152262
+    },
+    {
+      "team": "Arkansas State",
+      "Off_EPA": 0.154351,
+      "Def_EPA": 0.188218,
+      "Off_SuccessRate": 0.472414,
+      "Off_PassingDown_SR": 0.316456,
+      "Off_Explosiveness": 1.153007,
+      "Def_SuccessRate": 0.476636,
+      "Def_PassingDown_SR": 0.356322,
+      "Def_Havoc_Rate": 0.115,
+      "Off_LineYards": 3.320548,
+      "Net_EPA_Margin": -0.033867
+    },
+    {
+      "team": "Army",
+      "Off_EPA": 0.331186,
+      "Def_EPA": 0.229616,
+      "Off_SuccessRate": 0.531136,
+      "Off_PassingDown_SR": 0.316667,
+      "Off_Explosiveness": 1.091834,
+      "Def_SuccessRate": 0.45,
+      "Def_PassingDown_SR": 0.338462,
+      "Def_Havoc_Rate": 0.123,
+      "Off_LineYards": 3.650239,
+      "Net_EPA_Margin": 0.101571
+    },
+    {
+      "team": "Auburn",
+      "Off_EPA": 0.074267,
+      "Def_EPA": 0.008065,
+      "Off_SuccessRate": 0.421652,
+      "Off_PassingDown_SR": 0.358974,
+      "Off_Explosiveness": 1.258493,
+      "Def_SuccessRate": 0.384416,
+      "Def_PassingDown_SR": 0.25,
+      "Def_Havoc_Rate": 0.166,
+      "Off_LineYards": 3.321084,
+      "Net_EPA_Margin": 0.066203
+    }
+  ],
+  "master_sample": [
+    {
+      "Away_Team": "Jacksonville State Gamecocks",
+      "Home_Team": "Kennesaw State Owls",
+      "DK_Spread": 3.0,
+      "FD_Spread": 2.5,
+      "Away_Net_EPA_Margin": 0.16522,
+      "Home_Net_EPA_Margin": -0.054248,
+      "Net_EPA_Edge_Home": -0.219468
+    },
+    {
+      "Away_Team": "New Mexico State Aggies",
+      "Home_Team": "Florida International Panthers",
+      "DK_Spread": -6.5,
+      "FD_Spread": -6.5,
+      "Away_Net_EPA_Margin": 0.013578,
+      "Home_Net_EPA_Margin": 0.012947,
+      "Net_EPA_Edge_Home": -0.000631
+    },
+    {
+      "Away_Team": "Missouri State Bears",
+      "Home_Team": "Western Kentucky Hilltoppers",
+      "DK_Spread": -2.5,
+      "FD_Spread": -2.5,
+      "Away_Net_EPA_Margin": -0.126415,
+      "Home_Net_EPA_Margin": -0.274928,
+      "Net_EPA_Edge_Home": -0.148512
+    },
+    {
+      "Away_Team": "Sam Houston State Bearkats",
+      "Home_Team": "Liberty Flames",
+      "DK_Spread": -13.5,
+      "FD_Spread": -13.5,
+      "Away_Net_EPA_Margin": 0.03638,
+      "Home_Net_EPA_Margin": 0.127749,
+      "Net_EPA_Edge_Home": 0.091369
+    },
+    {
+      "Away_Team": "South Alabama Jaguars",
+      "Home_Team": "Arkansas State Red Wolves",
+      "DK_Spread": -1.5,
+      "FD_Spread": -1.5,
+      "Away_Net_EPA_Margin": -0.053218,
+      "Home_Net_EPA_Margin": -0.033867,
+      "Net_EPA_Edge_Home": 0.019351
+    },
+    {
+      "Away_Team": "South Florida Bulls",
+      "Home_Team": "UTSA Roadrunners",
+      "DK_Spread": -7.0,
+      "FD_Spread": -7.5,
+      "Away_Net_EPA_Margin": 0.189698,
+      "Home_Net_EPA_Margin": 0.172703,
+      "Net_EPA_Edge_Home": -0.016996
+    },
+    {
+      "Away_Team": "Florida State Seminoles",
+      "Home_Team": "Louisville Cardinals",
+      "DK_Spread": -3.5,
+      "FD_Spread": -3.5,
+      "Away_Net_EPA_Margin": 0.15134,
+      "Home_Net_EPA_Margin": 0.183498,
+      "Net_EPA_Edge_Home": 0.032159
+    },
+    {
+      "Away_Team": "Iowa Hawkeyes",
+      "Home_Team": "Washington Huskies",
+      "DK_Spread": -3.5,
+      "FD_Spread": -3.5,
+      "Away_Net_EPA_Margin": 0.191521,
+      "Home_Net_EPA_Margin": 0.203461,
+      "Net_EPA_Edge_Home": 0.011939
+    },
+    {
+      "Away_Team": "Washington State Cougars",
+      "Home_Team": "Utah State Aggies",
+      "DK_Spread": -5.5,
+      "FD_Spread": -5.5,
+      "Away_Net_EPA_Margin": -0.15028,
+      "Home_Net_EPA_Margin": -0.144463,
+      "Net_EPA_Edge_Home": 0.005817
+    },
+    {
+      "Away_Team": "Wyoming Cowboys",
+      "Home_Team": "San Jose State Spartans",
+      "DK_Spread": -6.0,
+      "FD_Spread": -5.5,
+      "Away_Net_EPA_Margin": -0.065317,
+      "Home_Net_EPA_Margin": 0.03986,
+      "Net_EPA_Edge_Home": 0.105177
+    }
+  ],
+  "lineyards_sample": [
+    {
+      "team": "Air Force",
+      "Off_LineYards": 3.527711,
+      "Def_LineYards": 2.931624
+    },
+    {
+      "team": "Akron",
+      "Off_LineYards": 3.692568,
+      "Def_LineYards": 3.212422
+    },
+    {
+      "team": "Alabama",
+      "Off_LineYards": 3.163536,
+      "Def_LineYards": 2.034932
+    },
+    {
+      "team": "App State",
+      "Off_LineYards": 2.576866,
+      "Def_LineYards": 2.620312
+    },
+    {
+      "team": "Arizona",
+      "Off_LineYards": 3.474359,
+      "Def_LineYards": 2.660169
+    },
+    {
+      "team": "Arizona State",
+      "Off_LineYards": 2.826119,
+      "Def_LineYards": 2.935938
+    },
+    {
+      "team": "Arkansas",
+      "Off_LineYards": 2.655405,
+      "Def_LineYards": 3.159259
+    },
+    {
+      "team": "Arkansas State",
+      "Off_LineYards": 3.320548,
+      "Def_LineYards": 3.518519
+    },
+    {
+      "team": "Army",
+      "Off_LineYards": 3.650239,
+      "Def_LineYards": 3.215254
+    },
+    {
+      "team": "Auburn",
+      "Off_LineYards": 3.321084,
+      "Def_LineYards": 2.797436
+    },
+    {
+      "team": "BYU",
+      "Off_LineYards": 3.692763,
+      "Def_LineYards": 2.4
+    },
+    {
+      "team": "Ball State",
+      "Off_LineYards": 2.59635,
+      "Def_LineYards": 3.154497
+    },
+    {
+      "team": "Baylor",
+      "Off_LineYards": 2.951546,
+      "Def_LineYards": 2.656863
+    },
+    {
+      "team": "Boise State",
+      "Off_LineYards": 3.451442,
+      "Def_LineYards": 2.587719
+    },
+    {
+      "team": "Boston College",
+      "Off_LineYards": 2.743452,
+      "Def_LineYards": 2.760541
+    }
+  ],
+  "target_market": [
+    {
+      "Game_Date_ET": "2026-10-07",
+      "Kickoff_ET": "2026-10-07 19:00:00-04:00",
+      "Away_Team": "Jacksonville State Gamecocks",
+      "Home_Team": "Kennesaw State Owls",
+      "DK_Spread": 3.0,
+      "FD_Spread": 2.5,
+      "DK_Total": 48.5,
+      "FD_Total": 48.5
+    },
+    {
+      "Game_Date_ET": "2026-10-07",
+      "Kickoff_ET": "2026-10-07 19:30:00-04:00",
+      "Away_Team": "New Mexico State Aggies",
+      "Home_Team": "Florida International Panthers",
+      "DK_Spread": -6.5,
+      "FD_Spread": -6.5,
+      "DK_Total": 45.5,
+      "FD_Total": 46.5
+    },
+    {
+      "Game_Date_ET": "2026-10-08",
+      "Kickoff_ET": "2026-10-08 19:00:00-04:00",
+      "Away_Team": "Missouri State Bears",
+      "Home_Team": "Western Kentucky Hilltoppers",
+      "DK_Spread": -2.5,
+      "FD_Spread": -2.5,
+      "DK_Total": 56.5,
+      "FD_Total": 56.5
+    },
+    {
+      "Game_Date_ET": "2026-10-08",
+      "Kickoff_ET": "2026-10-08 19:00:00-04:00",
+      "Away_Team": "Sam Houston State Bearkats",
+      "Home_Team": "Liberty Flames",
+      "DK_Spread": -13.5,
+      "FD_Spread": -13.5,
+      "DK_Total": 52.5,
+      "FD_Total": 52.5
+    },
+    {
+      "Game_Date_ET": "2026-10-08",
+      "Kickoff_ET": "2026-10-08 19:30:00-04:00",
+      "Away_Team": "South Alabama Jaguars",
+      "Home_Team": "Arkansas State Red Wolves",
+      "DK_Spread": -1.5,
+      "FD_Spread": -1.5,
+      "DK_Total": 58.5,
+      "FD_Total": 58.5
+    },
+    {
+      "Game_Date_ET": "2026-10-08",
+      "Kickoff_ET": "2026-10-08 19:30:00-04:00",
+      "Away_Team": "South Florida Bulls",
+      "Home_Team": "UTSA Roadrunners",
+      "DK_Spread": -7.0,
+      "FD_Spread": -7.5,
+      "DK_Total": 49.5,
+      "FD_Total": 50.5
+    },
+    {
+      "Game_Date_ET": "2026-10-09",
+      "Kickoff_ET": "2026-10-09 19:00:00-04:00",
+      "Away_Team": "Florida State Seminoles",
+      "Home_Team": "Louisville Cardinals",
+      "DK_Spread": -3.5,
+      "FD_Spread": -3.5,
+      "DK_Total": 59.5,
+      "FD_Total": 59.5
+    },
+    {
+      "Game_Date_ET": "2026-10-09",
+      "Kickoff_ET": "2026-10-09 21:00:00-04:00",
+      "Away_Team": "Iowa Hawkeyes",
+      "Home_Team": "Washington Huskies",
+      "DK_Spread": -3.5,
+      "FD_Spread": -3.5,
+      "DK_Total": 41.5,
+      "FD_Total": 41.5
+    },
+    {
+      "Game_Date_ET": "2026-10-09",
+      "Kickoff_ET": "2026-10-09 21:00:00-04:00",
+      "Away_Team": "Washington State Cougars",
+      "Home_Team": "Utah State Aggies",
+      "DK_Spread": -5.5,
+      "FD_Spread": -5.5,
+      "DK_Total": 44.5,
+      "FD_Total": 43.5
+    },
+    {
+      "Game_Date_ET": "2026-10-09",
+      "Kickoff_ET": "2026-10-09 21:00:00-04:00",
+      "Away_Team": "Wyoming Cowboys",
+      "Home_Team": "San Jose State Spartans",
+      "DK_Spread": -6.0,
+      "FD_Spread": -5.5,
+      "DK_Total": 43.5,
+      "FD_Total": 42.5
+    },
+    {
+      "Game_Date_ET": "2026-10-09",
+      "Kickoff_ET": "2026-10-09 22:15:00-04:00",
+      "Away_Team": "Iowa State Cyclones",
+      "Home_Team": "BYU Cougars",
+      "DK_Spread": -10.5,
+      "FD_Spread": -10.5,
+      "DK_Total": 46.5,
+      "FD_Total": 46.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 12:00:00-04:00",
+      "Away_Team": "Arizona Wildcats",
+      "Home_Team": "West Virginia Mountaineers",
+      "DK_Spread": 3.0,
+      "FD_Spread": 3.5,
+      "DK_Total": 61.5,
+      "FD_Total": 61.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 12:00:00-04:00",
+      "Away_Team": "Indiana Hoosiers",
+      "Home_Team": "Nebraska Cornhuskers",
+      "DK_Spread": 7.5,
+      "FD_Spread": 7.5,
+      "DK_Total": 49.5,
+      "FD_Total": 48.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 12:00:00-04:00",
+      "Away_Team": "North Carolina Tar Heels",
+      "Home_Team": "Pittsburgh Panthers",
+      "DK_Spread": -3.5,
+      "FD_Spread": -3.5,
+      "DK_Total": 47.5,
+      "FD_Total": 47.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 12:00:00-04:00",
+      "Away_Team": "Sacramento State Hornets",
+      "Home_Team": "Bowling Green Falcons",
+      "DK_Spread": -7.5,
+      "FD_Spread": -7.5,
+      "DK_Total": 44.5,
+      "FD_Total": 44.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 12:00:00-04:00",
+      "Away_Team": "Texas A&M Aggies",
+      "Home_Team": "Missouri Tigers",
+      "DK_Spread": -3.5,
+      "FD_Spread": -3.5,
+      "DK_Total": 48.5,
+      "FD_Total": 48.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 12:00:00-04:00",
+      "Away_Team": "Tulane Green Wave",
+      "Home_Team": "Army Black Knights",
+      "DK_Spread": -3.0,
+      "FD_Spread": -3.5,
+      "DK_Total": 48.5,
+      "FD_Total": 47.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 12:00:00-04:00",
+      "Away_Team": "UCF Knights",
+      "Home_Team": "Oklahoma State Cowboys",
+      "DK_Spread": -10.5,
+      "FD_Spread": -10.5,
+      "DK_Total": 53.5,
+      "FD_Total": 53.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 12:00:00-04:00",
+      "Away_Team": "Wake Forest Demon Deacons",
+      "Home_Team": "NC State Wolfpack",
+      "DK_Spread": 3.5,
+      "FD_Spread": 3.5,
+      "DK_Total": 59.5,
+      "FD_Total": 59.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 12:30:00-04:00",
+      "Away_Team": "Ball State Cardinals",
+      "Home_Team": "Northwestern Wildcats",
+      "DK_Spread": -36.5,
+      "FD_Spread": -36.5,
+      "DK_Total": 52.5,
+      "FD_Total": 52.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 12:45:00-04:00",
+      "Away_Team": "South Carolina Gamecocks",
+      "Home_Team": "Florida Gators",
+      "DK_Spread": -11.5,
+      "FD_Spread": -12.5,
+      "DK_Total": 60.5,
+      "FD_Total": 60.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 13:00:00-04:00",
+      "Away_Team": "Old Dominion Monarchs",
+      "Home_Team": "Appalachian State Mountaineers",
+      "DK_Spread": -9.5,
+      "FD_Spread": -9.5,
+      "DK_Total": 49.5,
+      "FD_Total": 50.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 14:00:00-04:00",
+      "Away_Team": "Miami (OH) RedHawks",
+      "Home_Team": "UMass Minutemen",
+      "DK_Spread": 2.5,
+      "FD_Spread": 2.5,
+      "DK_Total": 47.5,
+      "FD_Total": 47.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 15:30:00-04:00",
+      "Away_Team": "Buffalo Bulls",
+      "Home_Team": "Toledo Rockets",
+      "DK_Spread": -21.0,
+      "FD_Spread": -20.5,
+      "DK_Total": 54.5,
+      "FD_Total": 54.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 15:30:00-04:00",
+      "Away_Team": "Central Michigan Chippewas",
+      "Home_Team": "Ohio Bobcats",
+      "DK_Spread": -3.0,
+      "FD_Spread": -2.5,
+      "DK_Total": 46.5,
+      "FD_Total": 46.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 15:30:00-04:00",
+      "Away_Team": "Charlotte 49ers",
+      "Home_Team": "North Texas Mean Green",
+      "DK_Spread": -28.5,
+      "FD_Spread": -28.5,
+      "DK_Total": 57.5,
+      "FD_Total": 57.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 15:30:00-04:00",
+      "Away_Team": "Duke Blue Devils",
+      "Home_Team": "Georgia Tech Yellow Jackets",
+      "DK_Spread": 6.5,
+      "FD_Spread": 6.5,
+      "DK_Total": 45.5,
+      "FD_Total": 44.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 15:30:00-04:00",
+      "Away_Team": "Eastern Michigan Eagles",
+      "Home_Team": "Akron Zips",
+      "DK_Spread": 7.0,
+      "FD_Spread": 6.5,
+      "DK_Total": 51.5,
+      "FD_Total": 52.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 15:30:00-04:00",
+      "Away_Team": "Houston Cougars",
+      "Home_Team": "Kansas State Wildcats",
+      "DK_Spread": -2.5,
+      "FD_Spread": -2.5,
+      "DK_Total": 55.5,
+      "FD_Total": 55.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 15:30:00-04:00",
+      "Away_Team": "Illinois Fighting Illini",
+      "Home_Team": "Michigan State Spartans",
+      "DK_Spread": 2.5,
+      "FD_Spread": 2.5,
+      "DK_Total": 47.5,
+      "FD_Total": 48.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 15:30:00-04:00",
+      "Away_Team": "Kent State Golden Flashes",
+      "Home_Team": "Western Michigan Broncos",
+      "DK_Spread": -13.5,
+      "FD_Spread": -13.5,
+      "DK_Total": 43.5,
+      "FD_Total": 43.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 15:30:00-04:00",
+      "Away_Team": "Ole Miss Rebels",
+      "Home_Team": "Vanderbilt Commodores",
+      "DK_Spread": 10.0,
+      "FD_Spread": 10.5,
+      "DK_Total": 57.5,
+      "FD_Total": 56.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 15:30:00-04:00",
+      "Away_Team": "Stanford Cardinal",
+      "Home_Team": "Notre Dame Fighting Irish",
+      "DK_Spread": -38.5,
+      "FD_Spread": -37.5,
+      "DK_Total": 54.5,
+      "FD_Total": 54.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 15:30:00-04:00",
+      "Away_Team": "Texas Longhorns",
+      "Home_Team": "Oklahoma Sooners",
+      "DK_Spread": 7.5,
+      "FD_Spread": 7.5,
+      "DK_Total": 39.5,
+      "FD_Total": 39.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 15:30:00-04:00",
+      "Away_Team": "Tulsa Golden Hurricane",
+      "Home_Team": "Navy Midshipmen",
+      "DK_Spread": -2.5,
+      "FD_Spread": -2.5,
+      "DK_Total": 48.5,
+      "FD_Total": 48.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 15:30:00-04:00",
+      "Away_Team": "UCLA Bruins",
+      "Home_Team": "Oregon Ducks",
+      "DK_Spread": -11.5,
+      "FD_Spread": -11.5,
+      "DK_Total": 58.5,
+      "FD_Total": 58.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 15:30:00-04:00",
+      "Away_Team": "Virginia Tech Hokies",
+      "Home_Team": "California Golden Bears",
+      "DK_Spread": 10.0,
+      "FD_Spread": 9.5,
+      "DK_Total": 53.5,
+      "FD_Total": 53.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 15:45:00-04:00",
+      "Away_Team": "UConn Huskies",
+      "Home_Team": "Temple Owls",
+      "DK_Spread": -3.5,
+      "FD_Spread": -3.5,
+      "DK_Total": 54.5,
+      "FD_Total": 54.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 16:00:00-04:00",
+      "Away_Team": "Rice Owls",
+      "Home_Team": "East Carolina Pirates",
+      "DK_Spread": -10.0,
+      "FD_Spread": -9.5,
+      "DK_Total": 47.5,
+      "FD_Total": 47.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 16:15:00-04:00",
+      "Away_Team": "Maryland Terrapins",
+      "Home_Team": "Ohio State Buckeyes",
+      "DK_Spread": -34.5,
+      "FD_Spread": -34.5,
+      "DK_Total": 56.5,
+      "FD_Total": 56.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 16:15:00-04:00",
+      "Away_Team": "Tennessee Volunteers",
+      "Home_Team": "Arkansas Razorbacks",
+      "DK_Spread": 13.5,
+      "FD_Spread": 13.5,
+      "DK_Total": 51.5,
+      "FD_Total": 51.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 18:00:00-04:00",
+      "Away_Team": "San Diego State Aztecs",
+      "Home_Team": "Oregon State Beavers",
+      "DK_Spread": -14.5,
+      "FD_Spread": -14.5,
+      "DK_Total": 53.5,
+      "FD_Total": 53.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 19:00:00-04:00",
+      "Away_Team": "Coastal Carolina Chanticleers",
+      "Home_Team": "Marshall Thundering Herd",
+      "DK_Spread": -3.0,
+      "FD_Spread": -2.5,
+      "DK_Total": 58.5,
+      "FD_Total": 58.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 19:00:00-04:00",
+      "Away_Team": "LSU Tigers",
+      "Home_Team": "Kentucky Wildcats",
+      "DK_Spread": 8.5,
+      "FD_Spread": 8.5,
+      "DK_Total": 51.5,
+      "FD_Total": 51.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 19:00:00-04:00",
+      "Away_Team": "Nevada Wolf Pack",
+      "Home_Team": "UTEP Miners",
+      "DK_Spread": 9.5,
+      "FD_Spread": 8.5,
+      "DK_Total": 49.5,
+      "FD_Total": 49.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 19:00:00-04:00",
+      "Away_Team": "North Dakota State Bison",
+      "Home_Team": "UNLV Rebels",
+      "DK_Spread": 3.0,
+      "FD_Spread": 3.5,
+      "DK_Total": 47.5,
+      "FD_Total": 47.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 19:00:00-04:00",
+      "Away_Team": "UAB Blazers",
+      "Home_Team": "Memphis Tigers",
+      "DK_Spread": -14.0,
+      "FD_Spread": -14.5,
+      "DK_Total": 53.5,
+      "FD_Total": 53.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 19:30:00-04:00",
+      "Away_Team": "Air Force Falcons",
+      "Home_Team": "Northern Illinois Huskies",
+      "DK_Spread": 7.5,
+      "FD_Spread": 7.5,
+      "DK_Total": 46.5,
+      "FD_Total": 46.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 19:30:00-04:00",
+      "Away_Team": "Georgia Bulldogs",
+      "Home_Team": "Alabama Crimson Tide",
+      "DK_Spread": -1.5,
+      "FD_Spread": -1.5,
+      "DK_Total": 52.5,
+      "FD_Total": 52.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 19:30:00-04:00",
+      "Away_Team": "James Madison Dukes",
+      "Home_Team": "Georgia Southern Eagles",
+      "DK_Spread": 7.5,
+      "FD_Spread": 7.5,
+      "DK_Total": 51.5,
+      "FD_Total": 53.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 19:30:00-04:00",
+      "Away_Team": "Louisiana Ragin Cajuns",
+      "Home_Team": "Louisiana Tech Bulldogs",
+      "DK_Spread": -3.0,
+      "FD_Spread": -2.5,
+      "DK_Total": 47.5,
+      "FD_Total": 48.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 19:30:00-04:00",
+      "Away_Team": "Syracuse Orange",
+      "Home_Team": "Virginia Cavaliers",
+      "DK_Spread": -9.5,
+      "FD_Spread": -9.5,
+      "DK_Total": 50.5,
+      "FD_Total": 50.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 19:30:00-04:00",
+      "Away_Team": "USC Trojans",
+      "Home_Team": "Penn State Nittany Lions",
+      "DK_Spread": -1.5,
+      "FD_Spread": -1.5,
+      "DK_Total": 54.5,
+      "FD_Total": 54.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 20:00:00-04:00",
+      "Away_Team": "Minnesota Golden Gophers",
+      "Home_Team": "Purdue Boilermakers",
+      "DK_Spread": 2.5,
+      "FD_Spread": 2.5,
+      "DK_Total": 50.5,
+      "FD_Total": 50.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 22:15:00-04:00",
+      "Away_Team": "Kansas Jayhawks",
+      "Home_Team": "Utah Utes",
+      "DK_Spread": -15.5,
+      "FD_Spread": -15.5,
+      "DK_Total": 51.5,
+      "FD_Total": 50.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 22:30:00-04:00",
+      "Away_Team": "Boise State Broncos",
+      "Home_Team": "Fresno State Bulldogs",
+      "DK_Spread": 6.5,
+      "FD_Spread": 6.5,
+      "DK_Total": 48.5,
+      "FD_Total": 48.5
+    },
+    {
+      "Game_Date_ET": "2026-10-10",
+      "Kickoff_ET": "2026-10-10 22:30:00-04:00",
+      "Away_Team": "Hawaii Rainbow Warriors",
+      "Home_Team": "Arizona State Sun Devils",
+      "DK_Spread": -20.5,
+      "FD_Spread": -20.5,
+      "DK_Total": 50.5,
+      "FD_Total": 49.5
+    }
+  ],
+  "comparison_float_epsilon": 1e-12
+}

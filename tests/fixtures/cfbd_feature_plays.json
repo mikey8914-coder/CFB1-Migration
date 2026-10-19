@@ -1,0 +1,11 @@
+[
+  {"id": "1", "offense": "A", "defense": "B", "ppa": 1.0},
+  {"id": "2", "offense": "A", "defense": "B", "ppa": 3.0},
+  {"id": "2", "offense": "A", "defense": "B", "ppa": 3.0},
+  {"id": "3", "offense": "B", "defense": "A", "ppa": -1.0},
+  {"id": "4", "offense": "B", "defense": "A", "ppa": 1.0},
+  {"id": "5", "offense": "C", "defense": "B", "ppa": 2.0},
+  {"id": "6", "offense": null, "defense": "B", "ppa": 99.0},
+  {"id": "7", "offense": "A", "defense": null, "ppa": 99.0},
+  {"id": "8", "offense": "A", "defense": "B", "ppa": null}
+]

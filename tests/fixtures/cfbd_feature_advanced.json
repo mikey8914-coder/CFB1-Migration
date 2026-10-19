@@ -1,0 +1,12 @@
+[
+  {
+    "season": 2026, "team": "A",
+    "offense": {"successRate": 0.45, "passingDowns": {"successRate": 0.3}, "explosiveness": 1.2, "lineYards": 3.4},
+    "defense": {"successRate": 0.4, "passingDowns": {"successRate": 0.2}, "havoc": {"total": 0.18}, "lineYards": 2.8}
+  },
+  {
+    "season": 2026, "team": "B",
+    "offense": {"successRate": 0.35, "passingDowns": {"successRate": 0.25}, "explosiveness": 1.1, "lineYards": 3.0},
+    "defense": {"successRate": 0.5, "passingDowns": {"successRate": 0.4}, "havoc": {"total": 0.1}, "lineYards": 3.6}
+  }
+]
