@@ -1,0 +1,1181 @@
+{
+  "notebook": "legacy/CFB1_Colab_Reference.ipynb",
+  "sha256": "94d8eca356392e9872974c2579a6fb45c3a989dbe0a5026d21f7ba70dff33431",
+  "season": 2026,
+  "data_through_week": 5,
+  "target_week": 6,
+  "samples": {
+    "OLD CELL 36": [
+      [
+        {
+          "Game": "Jacksonville State Gamecocks at Kennesaw State Owls",
+          "Model_Side": "Jacksonville State Gamecocks",
+          "EPA_Value": 0.219468,
+          "FEI_Value": 2.4,
+          "M3_Support": "Jacksonville State Gamecocks +OAY_DAY",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "New Mexico State Aggies at Florida International Panthers",
+          "Model_Side": "New Mexico State Aggies",
+          "EPA_Value": 0.000631,
+          "FEI_Value": 5.3,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Missouri State Bears at Western Kentucky Hilltoppers",
+          "Model_Side": "Missouri State Bears",
+          "EPA_Value": 0.148512,
+          "FEI_Value": 7.3,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Sam Houston State Bearkats at Liberty Flames",
+          "Model_Side": "Liberty Flames",
+          "EPA_Value": 0.091369,
+          "FEI_Value": 7.8,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "South Florida Bulls at UTSA Roadrunners",
+          "Model_Side": "South Florida Bulls",
+          "EPA_Value": 0.016996,
+          "FEI_Value": 7.0,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Wyoming Cowboys at San Jose State Spartans",
+          "Model_Side": "San Jose State Spartans",
+          "EPA_Value": 0.105177,
+          "FEI_Value": 1.8,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Arizona Wildcats at West Virginia Mountaineers",
+          "Model_Side": "Arizona Wildcats",
+          "EPA_Value": 0.184628,
+          "FEI_Value": 13.5,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Indiana Hoosiers at Nebraska Cornhuskers",
+          "Model_Side": "Indiana Hoosiers",
+          "EPA_Value": 0.113786,
+          "FEI_Value": 9.3,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "North Carolina Tar Heels at Pittsburgh Panthers",
+          "Model_Side": "Pittsburgh Panthers",
+          "EPA_Value": 0.24122,
+          "FEI_Value": 11.5,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Wake Forest Demon Deacons at NC State Wolfpack",
+          "Model_Side": "Wake Forest Demon Deacons",
+          "EPA_Value": 0.144548,
+          "FEI_Value": 7.6,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Ball State Cardinals at Northwestern Wildcats",
+          "Model_Side": "Northwestern Wildcats",
+          "EPA_Value": 0.467262,
+          "FEI_Value": 12.1,
+          "M3_Support": "Northwestern Wildcats +OAY_DAY",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Buffalo Bulls at Toledo Rockets",
+          "Model_Side": "Toledo Rockets",
+          "EPA_Value": 0.363014,
+          "FEI_Value": 3.0,
+          "M3_Support": "Toledo Rockets +OAY_DAY",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Central Michigan Chippewas at Ohio Bobcats",
+          "Model_Side": "Ohio Bobcats",
+          "EPA_Value": 0.035953,
+          "FEI_Value": 6.0,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Charlotte 49ers at North Texas Mean Green",
+          "Model_Side": "North Texas Mean Green",
+          "EPA_Value": 0.441874,
+          "FEI_Value": 2.1,
+          "M3_Support": "North Texas Mean Green +OAY_DAY",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Duke Blue Devils at Georgia Tech Yellow Jackets",
+          "Model_Side": "Duke Blue Devils",
+          "EPA_Value": 0.373008,
+          "FEI_Value": 5.2,
+          "M3_Support": "Duke Blue Devils +OAY_DAY",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Eastern Michigan Eagles at Akron Zips",
+          "Model_Side": "Eastern Michigan Eagles",
+          "EPA_Value": 0.174114,
+          "FEI_Value": 7.4,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Houston Cougars at Kansas State Wildcats",
+          "Model_Side": "Kansas State Wildcats",
+          "EPA_Value": 0.094859,
+          "FEI_Value": 6.8,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Illinois Fighting Illini at Michigan State Spartans",
+          "Model_Side": "Illinois Fighting Illini",
+          "EPA_Value": 0.255248,
+          "FEI_Value": 6.8,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Kent State Golden Flashes at Western Michigan Broncos",
+          "Model_Side": "Western Michigan Broncos",
+          "EPA_Value": 0.187013,
+          "FEI_Value": 6.6,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Ole Miss Rebels at Vanderbilt Commodores",
+          "Model_Side": "Ole Miss Rebels",
+          "EPA_Value": 0.004082,
+          "FEI_Value": 2.0,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Stanford Cardinal at Notre Dame Fighting Irish",
+          "Model_Side": "Notre Dame Fighting Irish",
+          "EPA_Value": 0.643768,
+          "FEI_Value": 21.5,
+          "M3_Support": "Stanford Cardinal -HAVOC_TRAP",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, OPP_TEAM_TOTAL_UNDER, OPP_1H...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Texas Longhorns at Oklahoma Sooners",
+          "Model_Side": "Texas Longhorns",
+          "EPA_Value": 0.029112,
+          "FEI_Value": 5.1,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Virginia Tech Hokies at California Golden Bears",
+          "Model_Side": "Virginia Tech Hokies",
+          "EPA_Value": 0.274383,
+          "FEI_Value": 4.1,
+          "M3_Support": "California Golden Bears -HAVOC_TRAP",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, OPP_TEAM_TOTAL_UNDER, OPP_1H...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "UConn Huskies at Temple Owls",
+          "Model_Side": "UConn Huskies",
+          "EPA_Value": 0.104439,
+          "FEI_Value": 2.0,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Rice Owls at East Carolina Pirates",
+          "Model_Side": "East Carolina Pirates",
+          "EPA_Value": 0.158938,
+          "FEI_Value": 7.7,
+          "M3_Support": "Rice Owls -HAVOC_TRAP",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, OPP_TEAM_TOTAL_UNDER, OPP_1H...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Maryland Terrapins at Ohio State Buckeyes",
+          "Model_Side": "Ohio State Buckeyes",
+          "EPA_Value": 0.432617,
+          "FEI_Value": 11.7,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Tennessee Volunteers at Arkansas Razorbacks",
+          "Model_Side": "Tennessee Volunteers",
+          "EPA_Value": 0.442441,
+          "FEI_Value": 13.8,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "LSU Tigers at Kentucky Wildcats",
+          "Model_Side": "LSU Tigers",
+          "EPA_Value": 0.248698,
+          "FEI_Value": 3.5,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Nevada Wolf Pack at UTEP Miners",
+          "Model_Side": "Nevada Wolf Pack",
+          "EPA_Value": 0.412176,
+          "FEI_Value": 11.8,
+          "M3_Support": "Nevada Wolf Pack +OAY_DAY",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "UAB Blazers at Memphis Tigers",
+          "Model_Side": "Memphis Tigers",
+          "EPA_Value": 0.053547,
+          "FEI_Value": 9.7,
+          "M3_Support": "Memphis Tigers +LINE_YARDS",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Air Force Falcons at Northern Illinois Huskies",
+          "Model_Side": "Air Force Falcons",
+          "EPA_Value": 0.468333,
+          "FEI_Value": 10.8,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Georgia Bulldogs at Alabama Crimson Tide",
+          "Model_Side": "Georgia Bulldogs",
+          "EPA_Value": 0.069383,
+          "FEI_Value": 6.6,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "James Madison Dukes at Georgia Southern Eagles",
+          "Model_Side": "James Madison Dukes",
+          "EPA_Value": 0.374985,
+          "FEI_Value": 17.1,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Syracuse Orange at Virginia Cavaliers",
+          "Model_Side": "Virginia Cavaliers",
+          "EPA_Value": 0.076093,
+          "FEI_Value": 6.7,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Minnesota Golden Gophers at Purdue Boilermakers",
+          "Model_Side": "Minnesota Golden Gophers",
+          "EPA_Value": 0.124584,
+          "FEI_Value": 6.2,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Boise State Broncos at Fresno State Bulldogs",
+          "Model_Side": "Boise State Broncos",
+          "EPA_Value": 0.122522,
+          "FEI_Value": 12.4,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Hawaii Rainbow Warriors at Arizona State Sun Devils",
+          "Model_Side": "Arizona State Sun Devils",
+          "EPA_Value": 0.050585,
+          "FEI_Value": 4.4,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        }
+      ]
+    ],
+    "OLD CELL 37": [
+      [
+        {
+          "Game": "Jacksonville State Gamecocks at Kennesaw State Owls",
+          "DK_Spread": 3.0,
+          "FD_Spread": 2.5,
+          "Consensus_Spread": 2.75,
+          "Nearest_Key_Number": 3,
+          "Distance_From_Key": 0.25,
+          "Spread_Size_Bucket": "UNDER_3"
+        },
+        {
+          "Game": "Ball State Cardinals at Northwestern Wildcats",
+          "DK_Spread": -36.5,
+          "FD_Spread": -36.5,
+          "Consensus_Spread": -36.5,
+          "Nearest_Key_Number": 14,
+          "Distance_From_Key": 22.5,
+          "Spread_Size_Bucket": "21_PLUS"
+        },
+        {
+          "Game": "Buffalo Bulls at Toledo Rockets",
+          "DK_Spread": -21.0,
+          "FD_Spread": -20.5,
+          "Consensus_Spread": -20.75,
+          "Nearest_Key_Number": 14,
+          "Distance_From_Key": 6.75,
+          "Spread_Size_Bucket": "17_TO_20.5"
+        },
+        {
+          "Game": "Charlotte 49ers at North Texas Mean Green",
+          "DK_Spread": -28.5,
+          "FD_Spread": -28.5,
+          "Consensus_Spread": -28.5,
+          "Nearest_Key_Number": 14,
+          "Distance_From_Key": 14.5,
+          "Spread_Size_Bucket": "21_PLUS"
+        },
+        {
+          "Game": "Duke Blue Devils at Georgia Tech Yellow Jackets",
+          "DK_Spread": 6.5,
+          "FD_Spread": 6.5,
+          "Consensus_Spread": 6.5,
+          "Nearest_Key_Number": 7,
+          "Distance_From_Key": 0.5,
+          "Spread_Size_Bucket": "3_TO_6.5"
+        },
+        {
+          "Game": "Stanford Cardinal at Notre Dame Fighting Irish",
+          "DK_Spread": -38.5,
+          "FD_Spread": -37.5,
+          "Consensus_Spread": -38.0,
+          "Nearest_Key_Number": 14,
+          "Distance_From_Key": 24.0,
+          "Spread_Size_Bucket": "21_PLUS"
+        },
+        {
+          "Game": "Virginia Tech Hokies at California Golden Bears",
+          "DK_Spread": 10.0,
+          "FD_Spread": 9.5,
+          "Consensus_Spread": 9.75,
+          "Nearest_Key_Number": 10,
+          "Distance_From_Key": 0.25,
+          "Spread_Size_Bucket": "7_TO_9.5"
+        },
+        {
+          "Game": "Rice Owls at East Carolina Pirates",
+          "DK_Spread": -10.0,
+          "FD_Spread": -9.5,
+          "Consensus_Spread": -9.75,
+          "Nearest_Key_Number": 10,
+          "Distance_From_Key": 0.25,
+          "Spread_Size_Bucket": "7_TO_9.5"
+        },
+        {
+          "Game": "Nevada Wolf Pack at UTEP Miners",
+          "DK_Spread": 9.5,
+          "FD_Spread": 8.5,
+          "Consensus_Spread": 9.0,
+          "Nearest_Key_Number": 10,
+          "Distance_From_Key": 1.0,
+          "Spread_Size_Bucket": "7_TO_9.5"
+        },
+        {
+          "Game": "UAB Blazers at Memphis Tigers",
+          "DK_Spread": -14.0,
+          "FD_Spread": -14.5,
+          "Consensus_Spread": -14.25,
+          "Nearest_Key_Number": 14,
+          "Distance_From_Key": 0.25,
+          "Spread_Size_Bucket": "14_TO_16.5"
+        }
+      ]
+    ],
+    "OLD CELL 38": [
+      [
+        {
+          "Game": "Jacksonville State Gamecocks at Kennesaw State Owls",
+          "Consensus_Favorite": "Jacksonville State Gamecocks",
+          "Favorite_Spread_Size": 2.75,
+          "Spread_Class": "BELOW_16.5",
+          "Nearest_Key_Number": 3,
+          "Distance_From_Key": 0.25
+        },
+        {
+          "Game": "Ball State Cardinals at Northwestern Wildcats",
+          "Consensus_Favorite": "Northwestern Wildcats",
+          "Favorite_Spread_Size": 36.5,
+          "Spread_Class": "VERY_LARGE_20.5_PLUS",
+          "Nearest_Key_Number": 14,
+          "Distance_From_Key": 22.5
+        },
+        {
+          "Game": "Buffalo Bulls at Toledo Rockets",
+          "Consensus_Favorite": "Toledo Rockets",
+          "Favorite_Spread_Size": 20.75,
+          "Spread_Class": "VERY_LARGE_20.5_PLUS",
+          "Nearest_Key_Number": 14,
+          "Distance_From_Key": 6.75
+        },
+        {
+          "Game": "Charlotte 49ers at North Texas Mean Green",
+          "Consensus_Favorite": "North Texas Mean Green",
+          "Favorite_Spread_Size": 28.5,
+          "Spread_Class": "VERY_LARGE_20.5_PLUS",
+          "Nearest_Key_Number": 14,
+          "Distance_From_Key": 14.5
+        },
+        {
+          "Game": "Duke Blue Devils at Georgia Tech Yellow Jackets",
+          "Consensus_Favorite": "Duke Blue Devils",
+          "Favorite_Spread_Size": 6.5,
+          "Spread_Class": "BELOW_16.5",
+          "Nearest_Key_Number": 7,
+          "Distance_From_Key": 0.5
+        },
+        {
+          "Game": "Stanford Cardinal at Notre Dame Fighting Irish",
+          "Consensus_Favorite": "Notre Dame Fighting Irish",
+          "Favorite_Spread_Size": 38.0,
+          "Spread_Class": "VERY_LARGE_20.5_PLUS",
+          "Nearest_Key_Number": 14,
+          "Distance_From_Key": 24.0
+        },
+        {
+          "Game": "Virginia Tech Hokies at California Golden Bears",
+          "Consensus_Favorite": "Virginia Tech Hokies",
+          "Favorite_Spread_Size": 9.75,
+          "Spread_Class": "BELOW_16.5",
+          "Nearest_Key_Number": 10,
+          "Distance_From_Key": 0.25
+        },
+        {
+          "Game": "Rice Owls at East Carolina Pirates",
+          "Consensus_Favorite": "East Carolina Pirates",
+          "Favorite_Spread_Size": 9.75,
+          "Spread_Class": "BELOW_16.5",
+          "Nearest_Key_Number": 10,
+          "Distance_From_Key": 0.25
+        },
+        {
+          "Game": "Nevada Wolf Pack at UTEP Miners",
+          "Consensus_Favorite": "Nevada Wolf Pack",
+          "Favorite_Spread_Size": 9.0,
+          "Spread_Class": "BELOW_16.5",
+          "Nearest_Key_Number": 10,
+          "Distance_From_Key": 1.0
+        },
+        {
+          "Game": "UAB Blazers at Memphis Tigers",
+          "Consensus_Favorite": "Memphis Tigers",
+          "Favorite_Spread_Size": 14.25,
+          "Spread_Class": "BELOW_16.5",
+          "Nearest_Key_Number": 14,
+          "Distance_From_Key": 0.25
+        }
+      ]
+    ],
+    "OLD CELL 39": [
+      [
+        {
+          "Game": "Jacksonville State Gamecocks at Kennesaw State Owls",
+          "Model_Side": "Jacksonville State Gamecocks",
+          "EPA_Value": 0.219468,
+          "FEI_Value": 2.4,
+          "M3_Support": "Jacksonville State Gamecocks +OAY_DAY",
+          "M3_Conflict": "",
+          "Favorite_Spread_Size": 2.75,
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Ball State Cardinals at Northwestern Wildcats",
+          "Model_Side": "Northwestern Wildcats",
+          "EPA_Value": 0.467262,
+          "FEI_Value": 12.1,
+          "M3_Support": "Northwestern Wildcats +OAY_DAY",
+          "M3_Conflict": "",
+          "Favorite_Spread_Size": 36.5,
+          "Spread_Status": "DERIVATIVES_FIRST_20.5_PLUS",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Buffalo Bulls at Toledo Rockets",
+          "Model_Side": "Toledo Rockets",
+          "EPA_Value": 0.363014,
+          "FEI_Value": 3.0,
+          "M3_Support": "Toledo Rockets +OAY_DAY",
+          "M3_Conflict": "",
+          "Favorite_Spread_Size": 20.75,
+          "Spread_Status": "DERIVATIVES_FIRST_20.5_PLUS",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Charlotte 49ers at North Texas Mean Green",
+          "Model_Side": "North Texas Mean Green",
+          "EPA_Value": 0.441874,
+          "FEI_Value": 2.1,
+          "M3_Support": "North Texas Mean Green +OAY_DAY",
+          "M3_Conflict": "",
+          "Favorite_Spread_Size": 28.5,
+          "Spread_Status": "DERIVATIVES_FIRST_20.5_PLUS",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Duke Blue Devils at Georgia Tech Yellow Jackets",
+          "Model_Side": "Duke Blue Devils",
+          "EPA_Value": 0.373008,
+          "FEI_Value": 5.2,
+          "M3_Support": "Duke Blue Devils +OAY_DAY",
+          "M3_Conflict": "",
+          "Favorite_Spread_Size": 6.5,
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Stanford Cardinal at Notre Dame Fighting Irish",
+          "Model_Side": "Notre Dame Fighting Irish",
+          "EPA_Value": 0.643768,
+          "FEI_Value": 21.5,
+          "M3_Support": "Stanford Cardinal -HAVOC_TRAP",
+          "M3_Conflict": "",
+          "Favorite_Spread_Size": 38.0,
+          "Spread_Status": "DERIVATIVES_FIRST_20.5_PLUS",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, OPP_TEAM_TOTAL_UNDER, OPP_1H...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Virginia Tech Hokies at California Golden Bears",
+          "Model_Side": "Virginia Tech Hokies",
+          "EPA_Value": 0.274383,
+          "FEI_Value": 4.1,
+          "M3_Support": "California Golden Bears -HAVOC_TRAP",
+          "M3_Conflict": "",
+          "Favorite_Spread_Size": 9.75,
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, OPP_TEAM_TOTAL_UNDER, OPP_1H...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Rice Owls at East Carolina Pirates",
+          "Model_Side": "East Carolina Pirates",
+          "EPA_Value": 0.158938,
+          "FEI_Value": 7.7,
+          "M3_Support": "Rice Owls -HAVOC_TRAP",
+          "M3_Conflict": "",
+          "Favorite_Spread_Size": 9.75,
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, OPP_TEAM_TOTAL_UNDER, OPP_1H...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Maryland Terrapins at Ohio State Buckeyes",
+          "Model_Side": "Ohio State Buckeyes",
+          "EPA_Value": 0.432617,
+          "FEI_Value": 11.7,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Favorite_Spread_Size": 34.5,
+          "Spread_Status": "DERIVATIVES_FIRST_20.5_PLUS",
+          "Eligible_Market_Routes": "1H_SPREAD_REVIEW, TEAM_TOTAL_REVIEW",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Nevada Wolf Pack at UTEP Miners",
+          "Model_Side": "Nevada Wolf Pack",
+          "EPA_Value": 0.412176,
+          "FEI_Value": 11.8,
+          "M3_Support": "Nevada Wolf Pack +OAY_DAY",
+          "M3_Conflict": "",
+          "Favorite_Spread_Size": 9.0,
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "UAB Blazers at Memphis Tigers",
+          "Model_Side": "Memphis Tigers",
+          "EPA_Value": 0.053547,
+          "FEI_Value": 9.7,
+          "M3_Support": "Memphis Tigers +LINE_YARDS",
+          "M3_Conflict": "",
+          "Favorite_Spread_Size": 14.25,
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT...",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        },
+        {
+          "Game": "Hawaii Rainbow Warriors at Arizona State Sun Devils",
+          "Model_Side": "Arizona State Sun Devils",
+          "EPA_Value": 0.050585,
+          "FEI_Value": 4.4,
+          "M3_Support": "",
+          "M3_Conflict": "",
+          "Favorite_Spread_Size": 20.5,
+          "Spread_Status": "DERIVATIVES_FIRST_20.5_PLUS",
+          "Eligible_Market_Routes": "1H_SPREAD_REVIEW, TEAM_TOTAL_REVIEW",
+          "Final_Bet_Status": "UNPRICED — DO NOT BET YET"
+        }
+      ]
+    ],
+    "OLD CELL 40": [
+      [
+        {
+          "Game": "Jacksonville State Gamecocks at Kennesaw State Owls",
+          "Model_Side": "Jacksonville State Gamecocks",
+          "EPA_Value": 0.219468,
+          "FEI_Value": 2.4,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Evidence": "EPA_FEI_DIRECTIONAL_AGREEMENT, MODULE3_SUPPORT",
+          "Routing_Modifiers": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT..."
+        },
+        {
+          "Game": "Ball State Cardinals at Northwestern Wildcats",
+          "Model_Side": "Northwestern Wildcats",
+          "EPA_Value": 0.467262,
+          "FEI_Value": 12.1,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Evidence": "EPA_FEI_DIRECTIONAL_AGREEMENT, MODULE3_SUPPORT",
+          "Routing_Modifiers": "VERY_LARGE_SPREAD_20.5_PLUS",
+          "Spread_Status": "DERIVATIVES_FIRST_20.5_PLUS",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT..."
+        },
+        {
+          "Game": "Buffalo Bulls at Toledo Rockets",
+          "Model_Side": "Toledo Rockets",
+          "EPA_Value": 0.363014,
+          "FEI_Value": 3.0,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Evidence": "EPA_FEI_DIRECTIONAL_AGREEMENT, MODULE3_SUPPORT",
+          "Routing_Modifiers": "VERY_LARGE_SPREAD_20.5_PLUS",
+          "Spread_Status": "DERIVATIVES_FIRST_20.5_PLUS",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT..."
+        },
+        {
+          "Game": "Charlotte 49ers at North Texas Mean Green",
+          "Model_Side": "North Texas Mean Green",
+          "EPA_Value": 0.441874,
+          "FEI_Value": 2.1,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Evidence": "EPA_FEI_DIRECTIONAL_AGREEMENT, MODULE3_SUPPORT",
+          "Routing_Modifiers": "VERY_LARGE_SPREAD_20.5_PLUS",
+          "Spread_Status": "DERIVATIVES_FIRST_20.5_PLUS",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT..."
+        },
+        {
+          "Game": "Duke Blue Devils at Georgia Tech Yellow Jackets",
+          "Model_Side": "Duke Blue Devils",
+          "EPA_Value": 0.373008,
+          "FEI_Value": 5.2,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Evidence": "EPA_FEI_DIRECTIONAL_AGREEMENT, MODULE3_SUPPORT",
+          "Routing_Modifiers": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT..."
+        },
+        {
+          "Game": "Stanford Cardinal at Notre Dame Fighting Irish",
+          "Model_Side": "Notre Dame Fighting Irish",
+          "EPA_Value": 0.643768,
+          "FEI_Value": 21.5,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Evidence": "EPA_FEI_DIRECTIONAL_AGREEMENT, MODULE3_SUPPORT",
+          "Routing_Modifiers": "VERY_LARGE_SPREAD_20.5_PLUS",
+          "Spread_Status": "DERIVATIVES_FIRST_20.5_PLUS",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, OPP_TEAM_TOTAL_UNDER, OPP_1H..."
+        },
+        {
+          "Game": "Virginia Tech Hokies at California Golden Bears",
+          "Model_Side": "Virginia Tech Hokies",
+          "EPA_Value": 0.274383,
+          "FEI_Value": 4.1,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Evidence": "EPA_FEI_DIRECTIONAL_AGREEMENT, MODULE3_SUPPORT",
+          "Routing_Modifiers": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, OPP_TEAM_TOTAL_UNDER, OPP_1H..."
+        },
+        {
+          "Game": "Rice Owls at East Carolina Pirates",
+          "Model_Side": "East Carolina Pirates",
+          "EPA_Value": 0.158938,
+          "FEI_Value": 7.7,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Evidence": "EPA_FEI_DIRECTIONAL_AGREEMENT, MODULE3_SUPPORT",
+          "Routing_Modifiers": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, OPP_TEAM_TOTAL_UNDER, OPP_1H..."
+        },
+        {
+          "Game": "Nevada Wolf Pack at UTEP Miners",
+          "Model_Side": "Nevada Wolf Pack",
+          "EPA_Value": 0.412176,
+          "FEI_Value": 11.8,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Evidence": "EPA_FEI_DIRECTIONAL_AGREEMENT, MODULE3_SUPPORT",
+          "Routing_Modifiers": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT..."
+        },
+        {
+          "Game": "UAB Blazers at Memphis Tigers",
+          "Model_Side": "Memphis Tigers",
+          "EPA_Value": 0.053547,
+          "FEI_Value": 9.7,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Evidence": "EPA_FEI_DIRECTIONAL_AGREEMENT, MODULE3_SUPPORT",
+          "Routing_Modifiers": "",
+          "Spread_Status": "STANDARD_REVIEW",
+          "Eligible_Market_Routes": "FULL_GAME_SPREAD, TEAM_TOTAL_OVER, 1H_TEAM_TOT..."
+        }
+      ],
+      [
+        {
+          "Game": "Maryland Terrapins at Ohio State Buckeyes",
+          "Model_Side": "Ohio State Buckeyes",
+          "EPA_Value": 0.432617,
+          "FEI_Value": 11.7,
+          "Evidence_Class": "MODEL_AGREEMENT_ONLY",
+          "Routing_Modifiers": "VERY_LARGE_SPREAD_20.5_PLUS",
+          "Spread_Status": "DERIVATIVES_FIRST_20.5_PLUS",
+          "Eligible_Market_Routes": "1H_SPREAD_REVIEW, TEAM_TOTAL_REVIEW"
+        },
+        {
+          "Game": "Hawaii Rainbow Warriors at Arizona State Sun Devils",
+          "Model_Side": "Arizona State Sun Devils",
+          "EPA_Value": 0.050585,
+          "FEI_Value": 4.4,
+          "Evidence_Class": "MODEL_AGREEMENT_ONLY",
+          "Routing_Modifiers": "VERY_LARGE_SPREAD_20.5_PLUS",
+          "Spread_Status": "DERIVATIVES_FIRST_20.5_PLUS",
+          "Eligible_Market_Routes": "1H_SPREAD_REVIEW, TEAM_TOTAL_REVIEW"
+        }
+      ]
+    ],
+    "OLD CELL 41": [
+      [
+        {
+          "Game": "Stanford Cardinal at Notre Dame Fighting Irish",
+          "Model_Side": "Notre Dame Fighting Irish",
+          "EPA_Value": 0.643768,
+          "EPA_Top25": true,
+          "FEI_Value_Conservative": 21.5,
+          "FEI_Top25": true,
+          "Dual_Top25": true,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Candidate_Reason": "MODULE3_SUPPORT, DUAL_TOP25_MODEL_STRENGTH"
+        },
+        {
+          "Game": "Air Force Falcons at Northern Illinois Huskies",
+          "Model_Side": "Air Force Falcons",
+          "EPA_Value": 0.468333,
+          "EPA_Top25": true,
+          "FEI_Value_Conservative": 10.8,
+          "FEI_Top25": true,
+          "Dual_Top25": true,
+          "Evidence_Class": "MODEL_AGREEMENT_ONLY",
+          "Candidate_Reason": "DUAL_TOP25_MODEL_STRENGTH"
+        },
+        {
+          "Game": "Ball State Cardinals at Northwestern Wildcats",
+          "Model_Side": "Northwestern Wildcats",
+          "EPA_Value": 0.467262,
+          "EPA_Top25": true,
+          "FEI_Value_Conservative": 12.1,
+          "FEI_Top25": true,
+          "Dual_Top25": true,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Candidate_Reason": "MODULE3_SUPPORT, DUAL_TOP25_MODEL_STRENGTH"
+        },
+        {
+          "Game": "Tennessee Volunteers at Arkansas Razorbacks",
+          "Model_Side": "Tennessee Volunteers",
+          "EPA_Value": 0.442441,
+          "EPA_Top25": true,
+          "FEI_Value_Conservative": 13.8,
+          "FEI_Top25": true,
+          "Dual_Top25": true,
+          "Evidence_Class": "MODEL_AGREEMENT_ONLY",
+          "Candidate_Reason": "DUAL_TOP25_MODEL_STRENGTH"
+        },
+        {
+          "Game": "Maryland Terrapins at Ohio State Buckeyes",
+          "Model_Side": "Ohio State Buckeyes",
+          "EPA_Value": 0.432617,
+          "EPA_Top25": true,
+          "FEI_Value_Conservative": 11.7,
+          "FEI_Top25": true,
+          "Dual_Top25": true,
+          "Evidence_Class": "MODEL_AGREEMENT_ONLY",
+          "Candidate_Reason": "DUAL_TOP25_MODEL_STRENGTH"
+        },
+        {
+          "Game": "Nevada Wolf Pack at UTEP Miners",
+          "Model_Side": "Nevada Wolf Pack",
+          "EPA_Value": 0.412176,
+          "EPA_Top25": true,
+          "FEI_Value_Conservative": 11.8,
+          "FEI_Top25": true,
+          "Dual_Top25": true,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Candidate_Reason": "MODULE3_SUPPORT, DUAL_TOP25_MODEL_STRENGTH"
+        },
+        {
+          "Game": "James Madison Dukes at Georgia Southern Eagles",
+          "Model_Side": "James Madison Dukes",
+          "EPA_Value": 0.374985,
+          "EPA_Top25": true,
+          "FEI_Value_Conservative": 17.1,
+          "FEI_Top25": true,
+          "Dual_Top25": true,
+          "Evidence_Class": "MODEL_AGREEMENT_ONLY",
+          "Candidate_Reason": "DUAL_TOP25_MODEL_STRENGTH"
+        },
+        {
+          "Game": "Charlotte 49ers at North Texas Mean Green",
+          "Model_Side": "North Texas Mean Green",
+          "EPA_Value": 0.441874,
+          "EPA_Top25": true,
+          "FEI_Value_Conservative": 2.1,
+          "FEI_Top25": false,
+          "Dual_Top25": false,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Candidate_Reason": "MODULE3_SUPPORT"
+        },
+        {
+          "Game": "Duke Blue Devils at Georgia Tech Yellow Jackets",
+          "Model_Side": "Duke Blue Devils",
+          "EPA_Value": 0.373008,
+          "EPA_Top25": true,
+          "FEI_Value_Conservative": 5.2,
+          "FEI_Top25": false,
+          "Dual_Top25": false,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Candidate_Reason": "MODULE3_SUPPORT"
+        },
+        {
+          "Game": "Buffalo Bulls at Toledo Rockets",
+          "Model_Side": "Toledo Rockets",
+          "EPA_Value": 0.363014,
+          "EPA_Top25": true,
+          "FEI_Value_Conservative": 3.0,
+          "FEI_Top25": false,
+          "Dual_Top25": false,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Candidate_Reason": "MODULE3_SUPPORT"
+        },
+        {
+          "Game": "Virginia Tech Hokies at California Golden Bears",
+          "Model_Side": "Virginia Tech Hokies",
+          "EPA_Value": 0.274383,
+          "EPA_Top25": true,
+          "FEI_Value_Conservative": 4.1,
+          "FEI_Top25": false,
+          "Dual_Top25": false,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Candidate_Reason": "MODULE3_SUPPORT"
+        },
+        {
+          "Game": "Jacksonville State Gamecocks at Kennesaw State Owls",
+          "Model_Side": "Jacksonville State Gamecocks",
+          "EPA_Value": 0.219468,
+          "EPA_Top25": false,
+          "FEI_Value_Conservative": 2.4,
+          "FEI_Top25": false,
+          "Dual_Top25": false,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Candidate_Reason": "MODULE3_SUPPORT"
+        },
+        {
+          "Game": "Rice Owls at East Carolina Pirates",
+          "Model_Side": "East Carolina Pirates",
+          "EPA_Value": 0.158938,
+          "EPA_Top25": false,
+          "FEI_Value_Conservative": 7.7,
+          "FEI_Top25": false,
+          "Dual_Top25": false,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Candidate_Reason": "MODULE3_SUPPORT"
+        },
+        {
+          "Game": "UAB Blazers at Memphis Tigers",
+          "Model_Side": "Memphis Tigers",
+          "EPA_Value": 0.053547,
+          "EPA_Top25": false,
+          "FEI_Value_Conservative": 9.2,
+          "FEI_Top25": false,
+          "Dual_Top25": false,
+          "Evidence_Class": "MODEL_PLUS_MATCHUP_SUPPORT",
+          "Candidate_Reason": "MODULE3_SUPPORT"
+        }
+      ]
+    ],
+    "OLD CELL 42": [
+      [
+        {
+          "Game": "Jacksonville State Gamecocks at Kennesaw State Owls",
+          "Model_Side": "Jacksonville State Gamecocks",
+          "EPA_Value": 0.219468,
+          "FEI_Value_Conservative": 2.4,
+          "Review_Class": "MATCHUP_SUPPORTED",
+          "Phase1_Reason": "MODULE3_SUPPORT",
+          "Late_Week_Action": "COLLECT_COVERS_LINE_MOVEMENT"
+        },
+        {
+          "Game": "Ball State Cardinals at Northwestern Wildcats",
+          "Model_Side": "Northwestern Wildcats",
+          "EPA_Value": 0.467262,
+          "FEI_Value_Conservative": 12.1,
+          "Review_Class": "MODEL_PLUS_MATCHUP",
+          "Phase1_Reason": "MODULE3_SUPPORT, DUAL_TOP25_MODEL_STRENGTH",
+          "Late_Week_Action": "COLLECT_COVERS_LINE_MOVEMENT"
+        },
+        {
+          "Game": "Buffalo Bulls at Toledo Rockets",
+          "Model_Side": "Toledo Rockets",
+          "EPA_Value": 0.363014,
+          "FEI_Value_Conservative": 3.0,
+          "Review_Class": "MATCHUP_SUPPORTED",
+          "Phase1_Reason": "MODULE3_SUPPORT",
+          "Late_Week_Action": "COLLECT_COVERS_LINE_MOVEMENT"
+        },
+        {
+          "Game": "Charlotte 49ers at North Texas Mean Green",
+          "Model_Side": "North Texas Mean Green",
+          "EPA_Value": 0.441874,
+          "FEI_Value_Conservative": 2.1,
+          "Review_Class": "MATCHUP_SUPPORTED",
+          "Phase1_Reason": "MODULE3_SUPPORT",
+          "Late_Week_Action": "COLLECT_COVERS_LINE_MOVEMENT"
+        },
+        {
+          "Game": "Duke Blue Devils at Georgia Tech Yellow Jackets",
+          "Model_Side": "Duke Blue Devils",
+          "EPA_Value": 0.373008,
+          "FEI_Value_Conservative": 5.2,
+          "Review_Class": "MATCHUP_SUPPORTED",
+          "Phase1_Reason": "MODULE3_SUPPORT",
+          "Late_Week_Action": "COLLECT_COVERS_LINE_MOVEMENT"
+        },
+        {
+          "Game": "Stanford Cardinal at Notre Dame Fighting Irish",
+          "Model_Side": "Notre Dame Fighting Irish",
+          "EPA_Value": 0.643768,
+          "FEI_Value_Conservative": 21.5,
+          "Review_Class": "MODEL_PLUS_MATCHUP",
+          "Phase1_Reason": "MODULE3_SUPPORT, DUAL_TOP25_MODEL_STRENGTH",
+          "Late_Week_Action": "COLLECT_COVERS_LINE_MOVEMENT"
+        },
+        {
+          "Game": "Virginia Tech Hokies at California Golden Bears",
+          "Model_Side": "Virginia Tech Hokies",
+          "EPA_Value": 0.274383,
+          "FEI_Value_Conservative": 4.1,
+          "Review_Class": "MATCHUP_SUPPORTED",
+          "Phase1_Reason": "MODULE3_SUPPORT",
+          "Late_Week_Action": "COLLECT_COVERS_LINE_MOVEMENT"
+        },
+        {
+          "Game": "Rice Owls at East Carolina Pirates",
+          "Model_Side": "East Carolina Pirates",
+          "EPA_Value": 0.158938,
+          "FEI_Value_Conservative": 7.7,
+          "Review_Class": "MATCHUP_SUPPORTED",
+          "Phase1_Reason": "MODULE3_SUPPORT",
+          "Late_Week_Action": "COLLECT_COVERS_LINE_MOVEMENT"
+        },
+        {
+          "Game": "Maryland Terrapins at Ohio State Buckeyes",
+          "Model_Side": "Ohio State Buckeyes",
+          "EPA_Value": 0.432617,
+          "FEI_Value_Conservative": 11.7,
+          "Review_Class": "STRONG_MODEL_AGREEMENT",
+          "Phase1_Reason": "DUAL_TOP25_MODEL_STRENGTH",
+          "Late_Week_Action": "COLLECT_COVERS_LINE_MOVEMENT"
+        },
+        {
+          "Game": "Tennessee Volunteers at Arkansas Razorbacks",
+          "Model_Side": "Tennessee Volunteers",
+          "EPA_Value": 0.442441,
+          "FEI_Value_Conservative": 13.8,
+          "Review_Class": "STRONG_MODEL_AGREEMENT",
+          "Phase1_Reason": "DUAL_TOP25_MODEL_STRENGTH",
+          "Late_Week_Action": "COLLECT_COVERS_LINE_MOVEMENT"
+        },
+        {
+          "Game": "Nevada Wolf Pack at UTEP Miners",
+          "Model_Side": "Nevada Wolf Pack",
+          "EPA_Value": 0.412176,
+          "FEI_Value_Conservative": 11.8,
+          "Review_Class": "MODEL_PLUS_MATCHUP",
+          "Phase1_Reason": "MODULE3_SUPPORT, DUAL_TOP25_MODEL_STRENGTH",
+          "Late_Week_Action": "COLLECT_COVERS_LINE_MOVEMENT"
+        },
+        {
+          "Game": "UAB Blazers at Memphis Tigers",
+          "Model_Side": "Memphis Tigers",
+          "EPA_Value": 0.053547,
+          "FEI_Value_Conservative": 9.2,
+          "Review_Class": "MATCHUP_SUPPORTED",
+          "Phase1_Reason": "MODULE3_SUPPORT",
+          "Late_Week_Action": "COLLECT_COVERS_LINE_MOVEMENT"
+        },
+        {
+          "Game": "Air Force Falcons at Northern Illinois Huskies",
+          "Model_Side": "Air Force Falcons",
+          "EPA_Value": 0.468333,
+          "FEI_Value_Conservative": 10.8,
+          "Review_Class": "STRONG_MODEL_AGREEMENT",
+          "Phase1_Reason": "DUAL_TOP25_MODEL_STRENGTH",
+          "Late_Week_Action": "COLLECT_COVERS_LINE_MOVEMENT"
+        },
+        {
+          "Game": "James Madison Dukes at Georgia Southern Eagles",
+          "Model_Side": "James Madison Dukes",
+          "EPA_Value": 0.374985,
+          "FEI_Value_Conservative": 17.1,
+          "Review_Class": "STRONG_MODEL_AGREEMENT",
+          "Phase1_Reason": "DUAL_TOP25_MODEL_STRENGTH",
+          "Late_Week_Action": "COLLECT_COVERS_LINE_MOVEMENT"
+        }
+      ]
+    ]
+  },
+  "saved_streams": {
+    "OLD CELL 36": "================================================================================================\nCFB1 MARKET ROUTING BOARD\n================================================================================================\n\nEPA + FEI agreement games:       37\nGames routed:                   37\n\nDuplicate game rows:            0\nMissing required values:        0\nBlank model-side rows:          0\n\n------------------------------------------------------------------------------------------------\nCFB1 MARKET ROUTING BOARD: PASS\n================================================================================================\n",
+    "OLD CELL 37": "====================================================================================\nCFB1 SPREAD / KEY NUMBER STRUCTURE\n====================================================================================\n\nGames tested:                   57\nMissing DK/FD spread inputs:    0\nMissing derived values:         0\nWithin 0.5 of key number:       41\nWithin 1.0 of key number:       42\n\n------------------------------------------------------------------------------------\nCFB1 SPREAD / KEY NUMBER STRUCTURE: PASS\n====================================================================================\n\nSPREAD SIZE DISTRIBUTION\n----------------------------------------\nSpread_Size_Bucket\n10_TO_13.5     8\n14_TO_16.5     3\n17_TO_20.5     2\n21_PLUS        4\n3_TO_6.5      15\n7_TO_9.5      12\nUNDER_3       13\nName: count, dtype: int64\n\nGames with active market routes: 10\n",
+    "OLD CELL 38": "======================================================================================\nCFB1 LARGE-SPREAD CLASSIFICATION\n======================================================================================\n\nGames tested:                         57\nFavorite laying 16.5 or more:         6\nFavorite laying 20.5 or more:         6\n\nMissing large-spread input rows:       0\nMissing large-spread output rows:      0\nInvalid negative spread sizes:         0\n\n--------------------------------------------------------------------------------------\nCFB1 LARGE-SPREAD CLASSIFICATION: PASS\n======================================================================================\n\nGames with active market routes:      10\n",
+    "OLD CELL 39": "====================================================================================================\nCFB1 LARGE-SPREAD MARKET ROUTING\n====================================================================================================\n\nEPA + FEI agreement games:      37\nFinal routing rows:             37\nGames with active routes:       12\n\nDuplicate game rows:            0\nMissing spread-size values:     0\nMissing required values:        0\n\n----------------------------------------------------------------------------------------------------\nCFB1 LARGE-SPREAD MARKET ROUTING: PASS\n====================================================================================================\n\nSPREAD STATUS COUNTS\n----------------------------------------\nSpread_Status\nSTANDARD_REVIEW                6\nDERIVATIVES_FIRST_20.5_PLUS    6\nName: count, dtype: int64\n",
+    "OLD CELL 40": "========================================================================================================\nCFB1 EVIDENCE VS ROUTING SEPARATION\n========================================================================================================\n\nExpected rows:                  37\nEvidence/routing rows:          37\nDuplicate game rows:            0\nMissing required values:        0\nBlank evidence rows:            0\n\n--------------------------------------------------------------------------------------------------------\nCFB1 EVIDENCE VS ROUTING SEPARATION: PASS\n========================================================================================================\n\nEVIDENCE CLASS COUNTS\n---------------------------------------------\nEvidence_Class\nMODEL_AGREEMENT_ONLY          27\nMODEL_PLUS_MATCHUP_SUPPORT    10\nName: count, dtype: int64\n\nGames with Module 3 evidence:   10\n\nModel-only games with routing modifiers: 2\n",
+    "OLD CELL 41": "============================================================================================\nCFB1 PHASE 1 SHORTLIST\n============================================================================================\n\nWeek 6 model-strength cut points\n--------------------------------------------------\nEPA top 25% begins at:           0.267\nEPA top 10% begins at:           0.420\n\nFEI top 25% begins at:           10.6 points\nFEI top 10% begins at:           13.2 points\n\nEPA + FEI agreement games:           37\nPhase 1 evaluation rows:             37\nPhase 1 candidates:                  14\nWith Module 3 support:               10\nWith dual top-25% model strength:    7\nWith Module 3 conflict:              0\n\nDuplicate game rows:                 0\nMissing required values:             0\n\n--------------------------------------------------------------------------------------------\nCFB1 PHASE 1 SHORTLIST: PASS\n============================================================================================\n",
+    "OLD CELL 42": "====================================================================================================\nCFB1 PHASE 1 — LATE-WEEK REVIEW BOARD\n====================================================================================================\n\nPhase 1 candidates:             14\nReview-board rows:             14\nDuplicate game rows:           0\nMissing required values:       0\nUnclassified games:            0\n\n----------------------------------------------------------------------------------------------------\nCFB1 PHASE 1 REVIEW BOARD: PASS\n====================================================================================================\n\nREVIEW CLASS COUNTS\n---------------------------------------------\nReview_Class\nMATCHUP_SUPPORTED         7\nSTRONG_MODEL_AGREEMENT    4\nMODEL_PLUS_MATCHUP        3\nName: count, dtype: int64\n"
+  },
+  "upstream_fixture": "module3_notebook_checkpoint.json",
+  "label_provenance": "Truncated Game labels expanded only from unique upstream raw matchup prefixes; numeric baselines remain saved displays."
+}
