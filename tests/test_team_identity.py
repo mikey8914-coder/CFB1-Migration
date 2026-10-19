@@ -18,6 +18,15 @@ from cfb1.team_identity import (
 
 ROOT = Path(__file__).resolve().parents[1]
 
+SATURDAY_VERIFIED_ALIASES = {
+    "Miami (FL) Hurricanes": "Miami",
+    "Hawai'i Rainbow Warriors": "Hawai'i",
+    "Louisiana-Monroe Warhawks": "UL Monroe",
+    "Louisiana Ragin' Cajuns": "Louisiana",
+    "Southern Miss Golden Eagles": "Southern Miss",
+    "Mississippi Rebels": "Ole Miss"
+}
+
 
 def reference_aliases(label: str, variable: str) -> dict[str, str]:
     """Read literal dictionaries only, retaining the embedded CELL label."""
@@ -42,11 +51,19 @@ class TeamIdentityTests(unittest.TestCase):
         expected = reference_aliases("CELL 10", "TEAM_ALIASES")
         self.assertEqual(
             dict(TEAM_ALIASES),
-            {**expected, "Delaware Fightin' Blue Hens": "Delaware"},
+            {
+                **expected,
+                "Delaware Fightin' Blue Hens": "Delaware",
+                **SATURDAY_VERIFIED_ALIASES,
+            },
         )
+        resolver = TeamIdentityResolver(TEAM_ALIASES.values())
         for raw, canonical in expected.items():
             with self.subTest(raw=raw):
                 self.assertEqual(normalize_team_name(raw), canonical)
+                identity = resolver.resolve_market_name(raw)
+                self.assertEqual(identity.normalized_name, canonical)
+                self.assertTrue(identity.matched)
 
     def test_verified_delaware_alias_normalizes_and_resolves(self):
         raw = "Delaware Fightin' Blue Hens"
@@ -56,6 +73,53 @@ class TeamIdentityTests(unittest.TestCase):
         self.assertEqual(identity.normalized_name, "Delaware")
         self.assertTrue(identity.matched)
         self.assertFalse(TeamIdentityResolver(["Miami"]).resolve_market_name(raw).matched)
+
+    def assert_verified_saturday_alias(self, raw, canonical, game_id, team_id, covers_id, role):
+        self.assertEqual(normalize_team_name(raw), canonical)
+        identity = TeamIdentityResolver([canonical]).resolve_market_name(raw)
+        self.assertEqual(identity.raw_name, raw)
+        self.assertEqual(identity.normalized_name, canonical)
+        self.assertTrue(identity.matched)
+        self.assertFalse(TeamIdentityResolver([]).resolve_market_name(raw).matched)
+        mapping = json.loads((ROOT / "src/cfb1/team_aliases.json").read_text())
+        proof = mapping["verified_additions"][raw]
+        self.assertEqual(proof["canonical_name"], canonical)
+        self.assertEqual(proof["game_id"], game_id)
+        self.assertEqual(proof["cfbd_team_id"], team_id)
+        self.assertEqual(proof["covers_game_id"], covers_id)
+        self.assertEqual(proof["team_role"], role)
+        self.assertEqual((proof["season"], proof["week"], proof["game_date_et"]),
+                         (2026, 8, "2026-10-24"))
+
+    def test_verified_miami_fl_alias_normalizes_and_resolves(self):
+        self.assert_verified_saturday_alias(
+            'Miami (FL) Hurricanes', 'Miami', 401858274, 2390, '378524', 'home',
+        )
+
+    def test_verified_hawaii_alias_normalizes_and_resolves(self):
+        self.assert_verified_saturday_alias(
+            "Hawai'i Rainbow Warriors", "Hawai'i", 401864526, 62, '378485', 'away',
+        )
+
+    def test_verified_ul_monroe_alias_normalizes_and_resolves(self):
+        self.assert_verified_saturday_alias(
+            'Louisiana-Monroe Warhawks', 'UL Monroe', 401871094, 2433, '378546', 'away',
+        )
+
+    def test_verified_louisiana_alias_normalizes_and_resolves(self):
+        self.assert_verified_saturday_alias(
+            "Louisiana Ragin' Cajuns", 'Louisiana', 401869967, 309, '378483', 'away',
+        )
+
+    def test_verified_southern_miss_alias_normalizes_and_resolves(self):
+        self.assert_verified_saturday_alias(
+            'Southern Miss Golden Eagles', 'Southern Miss', 401869967, 2572, '378483', 'home',
+        )
+
+    def test_verified_ole_miss_alias_normalizes_and_resolves(self):
+        self.assert_verified_saturday_alias(
+            'Mississippi Rebels', 'Ole Miss', 401856732, 145, '378521', 'away',
+        )
 
     def test_mapping_matches_all_cell_14_aliases(self):
         expected = reference_aliases("CELL 14", "BCF_TO_CFBD")
@@ -72,7 +136,7 @@ class TeamIdentityTests(unittest.TestCase):
         self.assertEqual(mapping["reference"]["sha256"], digest)
         self.assertEqual(mapping["reference"]["TEAM_ALIASES"], "CELL 10")
         self.assertEqual(mapping["reference"]["BCF_TO_CFBD"], "CELL 14")
-        self.assertEqual(ALIAS_MAPPING_VERSION, 2)
+        self.assertEqual(ALIAS_MAPPING_VERSION, 3)
 
     def test_market_whitespace_is_collapsed_before_lookup(self):
         self.assertEqual(

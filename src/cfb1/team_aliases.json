@@ -1,5 +1,5 @@
 {
-  "mapping_version": 2,
+  "mapping_version": 3,
   "canonical_namespace": "CFBD team name",
   "reference": {
     "notebook": "legacy/CFB1_Colab_Reference.ipynb",
@@ -15,6 +15,72 @@
       "week": 8,
       "game_date_et": "2026-10-20",
       "game_id": 401871069
+    },
+    "Miami (FL) Hurricanes": {
+      "canonical_name": "Miami",
+      "source": "Authenticated CFBD regular-season schedule and team registry; live Covers structured matchup",
+      "season": 2026,
+      "week": 8,
+      "game_date_et": "2026-10-24",
+      "game_id": 401858274,
+      "cfbd_team_id": 2390,
+      "covers_game_id": "378524",
+      "team_role": "home"
+    },
+    "Hawai'i Rainbow Warriors": {
+      "canonical_name": "Hawai'i",
+      "source": "Authenticated CFBD regular-season schedule and team registry; live Covers structured matchup",
+      "season": 2026,
+      "week": 8,
+      "game_date_et": "2026-10-24",
+      "game_id": 401864526,
+      "cfbd_team_id": 62,
+      "covers_game_id": "378485",
+      "team_role": "away"
+    },
+    "Louisiana-Monroe Warhawks": {
+      "canonical_name": "UL Monroe",
+      "source": "Authenticated CFBD regular-season schedule and team registry; live Covers structured matchup",
+      "season": 2026,
+      "week": 8,
+      "game_date_et": "2026-10-24",
+      "game_id": 401871094,
+      "cfbd_team_id": 2433,
+      "covers_game_id": "378546",
+      "team_role": "away"
+    },
+    "Louisiana Ragin' Cajuns": {
+      "canonical_name": "Louisiana",
+      "source": "Authenticated CFBD regular-season schedule and team registry; live Covers structured matchup",
+      "season": 2026,
+      "week": 8,
+      "game_date_et": "2026-10-24",
+      "game_id": 401869967,
+      "cfbd_team_id": 309,
+      "covers_game_id": "378483",
+      "team_role": "away"
+    },
+    "Southern Miss Golden Eagles": {
+      "canonical_name": "Southern Miss",
+      "source": "Authenticated CFBD regular-season schedule and team registry; live Covers structured matchup",
+      "season": 2026,
+      "week": 8,
+      "game_date_et": "2026-10-24",
+      "game_id": 401869967,
+      "cfbd_team_id": 2572,
+      "covers_game_id": "378483",
+      "team_role": "home"
+    },
+    "Mississippi Rebels": {
+      "canonical_name": "Ole Miss",
+      "source": "Authenticated CFBD regular-season schedule and team registry; live Covers structured matchup",
+      "season": 2026,
+      "week": 8,
+      "game_date_et": "2026-10-24",
+      "game_id": 401856732,
+      "cfbd_team_id": 145,
+      "covers_game_id": "378521",
+      "team_role": "away"
     }
   },
   "TEAM_ALIASES": {
@@ -156,7 +222,13 @@
     "Western Kentucky Hilltoppers": "Western Kentucky",
     "Western Michigan Broncos": "Western Michigan",
     "Wisconsin Badgers": "Wisconsin",
-    "Wyoming Cowboys": "Wyoming"
+    "Wyoming Cowboys": "Wyoming",
+    "Miami (FL) Hurricanes": "Miami",
+    "Hawai'i Rainbow Warriors": "Hawai'i",
+    "Louisiana-Monroe Warhawks": "UL Monroe",
+    "Louisiana Ragin' Cajuns": "Louisiana",
+    "Southern Miss Golden Eagles": "Southern Miss",
+    "Mississippi Rebels": "Ole Miss"
   },
   "BCF_TO_CFBD": {
     "Appalachian State": "App State",
