@@ -5,6 +5,8 @@ import hashlib
 import json
 from pathlib import Path
 import unittest
+from datetime import date
+from unittest.mock import patch
 
 from cfb1.team_identity import (
     ALIAS_MAPPING_VERSION,
@@ -55,6 +57,7 @@ class TeamIdentityTests(unittest.TestCase):
                 **expected,
                 "Delaware Fightin' Blue Hens": "Delaware",
                 **SATURDAY_VERIFIED_ALIASES,
+                "North Carolina State Wolfpack": "NC State",
             },
         )
         resolver = TeamIdentityResolver(TEAM_ALIASES.values())
@@ -121,6 +124,64 @@ class TeamIdentityTests(unittest.TestCase):
             'Mississippi Rebels', 'Ole Miss', 401856732, 145, '378521', 'away',
         )
 
+    def test_verified_north_carolina_state_alias_normalizes_and_resolves(self):
+        raw = "North Carolina State Wolfpack"
+        self.assertEqual(normalize_team_name(raw), "NC State")
+        identity = TeamIdentityResolver(["NC State"]).resolve_market_name(raw)
+        self.assertEqual(identity.raw_name, raw)
+        self.assertEqual(identity.normalized_name, "NC State")
+        self.assertTrue(identity.matched)
+        self.assertFalse(TeamIdentityResolver(["Stanford"]).resolve_market_name(raw).matched)
+        mapping = json.loads((ROOT / "src/cfb1/team_aliases.json").read_text())
+        proof = mapping["verified_additions"][raw]
+        self.assertEqual(proof["canonical_name"], "NC State")
+        self.assertEqual((proof["game_id"], proof["cfbd_team_id"], proof["covers_game_id"]),
+                         (401858272, 152, "378466"))
+        self.assertEqual((proof["game_date_et"], proof["team_role"]), ("2026-10-23", "away"))
+
+    def test_canonical_nc_state_and_existing_wolfpack_alias_unchanged(self):
+        resolver = TeamIdentityResolver(["NC State"])
+        self.assertEqual(normalize_team_name("NC State"), "NC State")
+        self.assertEqual(normalize_team_name("NC State Wolfpack"), "NC State")
+        self.assertEqual(normalize_bcf_team_name("NC State"), "NC State")
+        self.assertTrue(resolver.resolve_market_name("NC State").matched)
+        self.assertTrue(resolver.resolve_bcf_name("NC State").matched)
+
+    def test_nc_state_shared_resolver_schedule_market_and_bcf_boundary(self):
+        from cfb1.schedule import normalize_cfbd_schedule
+        resolver = TeamIdentityResolver(["NC State", "Stanford"])
+        game = {"id": 401858272, "season": 2026, "week": 8, "seasonType": "regular",
+                "awayTeam": "North Carolina State Wolfpack", "homeTeam": "Stanford",
+                "startDate": "2026-10-24T02:30:00Z", "startTimeTBD": False}
+        result = normalize_cfbd_schedule([game], season=2026, week=8, resolver=resolver)
+        self.assertTrue(result.valid)
+        self.assertEqual(result.records[0].away_team, "NC State")
+        self.assertEqual(resolver.resolve_market_name(game["awayTeam"]).normalized_name,
+                         resolver.resolve_bcf_name("NC State").normalized_name)
+        # Preserve the established distinct CELL 14 BCF map; do not add mascot aliases there.
+        self.assertNotIn("North Carolina State Wolfpack", BCF_TO_CFBD)
+
+    def test_nc_state_market_enrichment_joins_official_schedule_via_shared_alias(self):
+        from cfb1.covers_bridge import enrich, attach_schedule
+        from cfb1.schedule import normalize_cfbd_schedule
+        resolver = TeamIdentityResolver(["NC State", "Stanford"])
+        game = {"id": 401858272, "season": 2026, "week": 8, "seasonType": "regular",
+                "awayTeam": "NC State", "homeTeam": "Stanford",
+                "startDate": "2026-10-24T02:30:00Z", "startTimeTBD": False}
+        schedule = normalize_cfbd_schedule([game], season=2026, week=8, resolver=resolver)
+        records = [{"covers_game_id": "378466", "market_date": "2026-10-23", "issues": []}]
+        class OfflineFetcher:
+            def get(self, url):
+                return "offline", {"retrieved_at": "2026-10-21T14:56:51Z"}
+        with patch("cfb1.covers_bridge.parse_detail", return_value=(
+                "North Carolina State Wolfpack", "Stanford Cardinal", "2026-10-24T02:30:00Z")):
+            enrich(records, OfflineFetcher(), date(2026, 10, 23), resolver)
+        attach_schedule(records, schedule, date(2026, 10, 23), season=2026, week=8)
+        self.assertEqual(records[0]["identity_status"], "cfbd_registry_matched")
+        self.assertEqual(records[0]["schedule_join_status"], "verified")
+        self.assertEqual(records[0]["game_id"], 401858272)
+        self.assertEqual(records[0]["issues"], [])
+
     def test_mapping_matches_all_cell_14_aliases(self):
         expected = reference_aliases("CELL 14", "BCF_TO_CFBD")
         self.assertEqual(dict(BCF_TO_CFBD), expected)
@@ -136,7 +197,7 @@ class TeamIdentityTests(unittest.TestCase):
         self.assertEqual(mapping["reference"]["sha256"], digest)
         self.assertEqual(mapping["reference"]["TEAM_ALIASES"], "CELL 10")
         self.assertEqual(mapping["reference"]["BCF_TO_CFBD"], "CELL 14")
-        self.assertEqual(ALIAS_MAPPING_VERSION, 3)
+        self.assertEqual(ALIAS_MAPPING_VERSION, 4)
 
     def test_market_whitespace_is_collapsed_before_lookup(self):
         self.assertEqual(

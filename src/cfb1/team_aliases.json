@@ -1,5 +1,5 @@
 {
-  "mapping_version": 3,
+  "mapping_version": 4,
   "canonical_namespace": "CFBD team name",
   "reference": {
     "notebook": "legacy/CFB1_Colab_Reference.ipynb",
@@ -81,6 +81,17 @@
       "cfbd_team_id": 145,
       "covers_game_id": "378521",
       "team_role": "away"
+    },
+    "North Carolina State Wolfpack": {
+      "canonical_name": "NC State",
+      "source": "Authenticated CFBD regular-season schedule and feature universe; live Covers structured matchup; user-verified canonical mapping",
+      "season": 2026,
+      "week": 8,
+      "game_date_et": "2026-10-23",
+      "game_id": 401858272,
+      "cfbd_team_id": 152,
+      "covers_game_id": "378466",
+      "team_role": "away"
     }
   },
   "TEAM_ALIASES": {
@@ -149,6 +160,7 @@
     "Nebraska Cornhuskers": "Nebraska",
     "New Mexico Lobos": "New Mexico",
     "New Mexico State Aggies": "New Mexico State",
+    "North Carolina State Wolfpack": "NC State",
     "North Carolina Tar Heels": "North Carolina",
     "North Texas Mean Green": "North Texas",
     "Northwestern Wildcats": "Northwestern",
